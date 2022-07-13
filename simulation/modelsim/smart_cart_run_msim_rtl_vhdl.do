@@ -5,11 +5,11 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/projeto/comparador_saldo.vhd}
+vcom -93 -work work {C:/projeto/mux_4_1.vhd}
 
-vcom -93 -work work {C:/projeto/tb_comparador_saldo.vhd}
+vcom -93 -work work {C:/projeto/tb_mux_4_1.vhd}
 
-vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb_comparador_saldo
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb_mux_4_1
 
 add wave *
 view structure

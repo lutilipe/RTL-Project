@@ -8,93 +8,87 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/projeto/simulation/modelsim
-Ecomparador_saldo
-Z1 w1657672536
-Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Emux_4_1
+Z1 w1657712455
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z7 8C:/projeto/comparador_saldo.vhd
-Z8 FC:/projeto/comparador_saldo.vhd
+Z4 8C:/projeto/mux_4_1.vhd
+Z5 FC:/projeto/mux_4_1.vhd
 l0
-L8
-VWkjYWO=D;e`e]4C4HY[2B1
-!s100 =l<QDf6:<6ECC3fencjQC2
-Z9 OV;C;10.5b;63
+L4
+VEiaHUicMjS]Q2OUPbnT2B2
+!s100 hPg8l@PTzog@6;UiZEWMf2
+Z6 OV;C;10.5b;63
 31
-Z10 !s110 1657672587
+Z7 !s110 1657712498
 !i10b 1
-Z11 !s108 1657672587.000000
-Z12 !s90 -reportprogress|300|-93|-work|work|C:/projeto/comparador_saldo.vhd|
-Z13 !s107 C:/projeto/comparador_saldo.vhd|
+Z8 !s108 1657712498.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/projeto/mux_4_1.vhd|
+Z10 !s107 C:/projeto/mux_4_1.vhd|
 !i113 1
-Z14 o-93 -work work
-Z15 tExplicit 1 CvgOpt 0
-Acomparador_saldo
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Amux_4_1
 R2
 R3
-R4
-R5
+DEx4 work 7 mux_4_1 0 22 EiaHUicMjS]Q2OUPbnT2B2
+l15
+L14
+V>RLVmDEPO?47BGn=<2Y^m0
+!s100 N;QJIZBG7@WbYWz;:KO>T2
 R6
-DEx4 work 16 comparador_saldo 0 22 WkjYWO=D;e`e]4C4HY[2B1
-l22
-L20
-Vnaen]E<lVj0?obzb><zPC1
-!s100 h<8609XL3CVB63O3hf[hV1
-R9
 31
-R10
+R7
 !i10b 1
+R8
+R9
+R10
+!i113 1
 R11
 R12
-R13
-!i113 1
-R14
-R15
-Etb_comparador_saldo
-Z16 w1657672546
-R4
-R3
+Etb_mux_4_1
+Z13 w1657711411
+Z14 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
-R5
-R6
+R3
 R0
-Z17 8C:/projeto/tb_comparador_saldo.vhd
-Z18 FC:/projeto/tb_comparador_saldo.vhd
+Z17 8C:/projeto/tb_mux_4_1.vhd
+Z18 FC:/projeto/tb_mux_4_1.vhd
 l0
 L6
-VlSh?5YZ5@R8i]DeIKI7^71
-!s100 D_W3EGJFWl6QJO:_=4Kj21
-R9
+Vg1K[2RcN2O?_<0jIEWLj=0
+!s100 2Tl>k6SGASSDkXE4ljlLZ0
+R6
 31
-R10
+R7
 !i10b 1
-R11
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/projeto/tb_comparador_saldo.vhd|
-Z20 !s107 C:/projeto/tb_comparador_saldo.vhd|
+R8
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/projeto/tb_mux_4_1.vhd|
+Z20 !s107 C:/projeto/tb_mux_4_1.vhd|
 !i113 1
+R11
+R12
+Ateste
 R14
 R15
-Ateste
-R4
-R3
+R16
 R2
-R5
-R6
-DEx4 work 19 tb_comparador_saldo 0 22 lSh?5YZ5@R8i]DeIKI7^71
-l22
+R3
+DEx4 work 10 tb_mux_4_1 0 22 g1K[2RcN2O?_<0jIEWLj=0
+l23
 L9
-Vk5D2A3]2?;c38Wee:Z>`>1
-!s100 Pon3EcTQ7E2C:F;k`onXI2
-R9
+VMTF:F`T8Yf=68LVKoz7]A0
+!s100 EkzOf9BgiX5WNNeDOc6Jk1
+R6
 31
-R10
+R7
 !i10b 1
-R11
+R8
 R19
 R20
 !i113 1
-R14
-R15
+R11
+R12

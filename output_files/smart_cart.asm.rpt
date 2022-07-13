@@ -1,5 +1,5 @@
 Assembler report for smart_cart
-Tue Jul 12 21:36:09 2022
+Wed Jul 13 08:41:20 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -38,11 +38,11 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Jul 12 21:36:09 2022 ;
+; Assembler Status      ; Successful - Wed Jul 13 08:41:20 2022 ;
 ; Revision Name         ; smart_cart                            ;
-; Top-level Entity Name ; comparador_saldo                      ;
+; Top-level Entity Name ; mux_4_1                               ;
 ; Family                ; Cyclone IV E                          ;
-; Device                ; EP4CE6F17C6                           ;
+; Device                ; EP4CE6E22C6                           ;
 +-----------------------+---------------------------------------+
 
 
@@ -67,8 +67,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+-------------------------------------------------+
 ; Option         ; Setting                                         ;
 +----------------+-------------------------------------------------+
-; JTAG usercode  ; 0x0008BA36                                      ;
-; Checksum       ; 0x0008BA36                                      ;
+; JTAG usercode  ; 0x00096B2B                                      ;
+; Checksum       ; 0x00096B2B                                      ;
 +----------------+-------------------------------------------------+
 
 
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Tue Jul 12 21:36:08 2022
+    Info: Processing started: Wed Jul 13 08:41:19 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off smart_cart -c smart_cart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4678 megabytes
-    Info: Processing ended: Tue Jul 12 21:36:09 2022
+    Info: Peak virtual memory: 4681 megabytes
+    Info: Processing ended: Wed Jul 13 08:41:20 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
