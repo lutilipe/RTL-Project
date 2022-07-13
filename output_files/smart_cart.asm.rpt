@@ -1,5 +1,5 @@
 Assembler report for smart_cart
-Tue Jul 12 21:06:37 2022
+Tue Jul 12 21:36:09 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/Quartus Prime/aulas/projeto/output_files/smart_cart.sof
+  5. Assembler Device Options: C:/projeto/output_files/smart_cart.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Jul 12 21:06:37 2022 ;
+; Assembler Status      ; Successful - Tue Jul 12 21:36:09 2022 ;
 ; Revision Name         ; smart_cart                            ;
 ; Top-level Entity Name ; comparador_saldo                      ;
 ; Family                ; Cyclone IV E                          ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+------------------------------------------------------------+
-; Assembler Generated Files                                  ;
-+------------------------------------------------------------+
-; File Name                                                  ;
-+------------------------------------------------------------+
-; D:/Quartus Prime/aulas/projeto/output_files/smart_cart.sof ;
-+------------------------------------------------------------+
++----------------------------------------+
+; Assembler Generated Files              ;
++----------------------------------------+
+; File Name                              ;
++----------------------------------------+
+; C:/projeto/output_files/smart_cart.sof ;
++----------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/Quartus Prime/aulas/projeto/output_files/smart_cart.sof ;
-+----------------+---------------------------------------------------------------------+
-; Option         ; Setting                                                             ;
-+----------------+---------------------------------------------------------------------+
-; JTAG usercode  ; 0x000907D7                                                          ;
-; Checksum       ; 0x000907D7                                                          ;
-+----------------+---------------------------------------------------------------------+
++------------------------------------------------------------------+
+; Assembler Device Options: C:/projeto/output_files/smart_cart.sof ;
++----------------+-------------------------------------------------+
+; Option         ; Setting                                         ;
++----------------+-------------------------------------------------+
+; JTAG usercode  ; 0x0008BA36                                      ;
+; Checksum       ; 0x0008BA36                                      ;
++----------------+-------------------------------------------------+
 
 
 +--------------------+
@@ -78,15 +78,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Tue Jul 12 21:06:37 2022
+    Info: Processing started: Tue Jul 12 21:36:08 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off smart_cart -c smart_cart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4681 megabytes
-    Info: Processing ended: Tue Jul 12 21:06:37 2022
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4678 megabytes
+    Info: Processing ended: Tue Jul 12 21:36:09 2022
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

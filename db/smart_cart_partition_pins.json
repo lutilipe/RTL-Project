@@ -4,7 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "saldo_lte_total",
+					"name" : "saldo_lt_total",
 					"strict" : false
 				},
 				{
