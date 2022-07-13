@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY mux_4_1
+set_global_assignment -name TOP_LEVEL_ENTITY DataPath
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 19.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:10:43  JULY 11, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "19.1.0 Lite Edition"
@@ -94,9 +94,6 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_comparado
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 ns" -section_id tb_comparador_saldo
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_comparador_saldo -section_id tb_comparador_saldo
 set_global_assignment -name VHDL_FILE DataPath.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_somador.vhd -section_id tb_somador
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_subtrator.vhd -section_id tb_subtrator
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_mux_4_1.vhd -section_id tb_mux_4_1
@@ -104,4 +101,7 @@ set_global_assignment -name EDA_TEST_BENCH_FILE tb_total_itens_reg.vhd -section_
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_incrementador.vhd -section_id tb_incrementador
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_comparador_itens.vhd -section_id tb_comparador_itens
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_comparador_saldo.vhd -section_id tb_comparador_saldo
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

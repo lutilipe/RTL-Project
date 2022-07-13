@@ -12,7 +12,7 @@ entity comparador_itens is
 	);
 	port (  
 		total_itens :IN STD_LOGIC_VECTOR(W-1 downto 0);
-      total_lt_32 :OUT STD_LOGIC
+      total_itens_lt_32 :OUT STD_LOGIC
 	);
 
 end comparador_itens;
@@ -22,7 +22,7 @@ architecture comparador_itens of comparador_itens is
 begin
 	with total_itens < max_itens select
 
-	total_lt_32 <=  '1' when true,
+	total_itens_lt_32 <=  '1' when true,
 						 '0' when others;
 
 end comparador_itens;

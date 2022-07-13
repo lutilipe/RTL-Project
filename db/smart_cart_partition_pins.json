@@ -4,151 +4,579 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "out1[0]",
+					"name" : "saldo_restante[0]",
 					"strict" : false
 				},
 				{
-					"name" : "out1[1]",
+					"name" : "saldo_restante[1]",
 					"strict" : false
 				},
 				{
-					"name" : "out1[2]",
+					"name" : "saldo_restante[2]",
 					"strict" : false
 				},
 				{
-					"name" : "out1[3]",
+					"name" : "saldo_restante[3]",
 					"strict" : false
 				},
 				{
-					"name" : "out1[4]",
+					"name" : "saldo_restante[4]",
 					"strict" : false
 				},
 				{
-					"name" : "out1[5]",
+					"name" : "saldo_restante[5]",
 					"strict" : false
 				},
 				{
-					"name" : "out1[6]",
+					"name" : "saldo_restante[6]",
 					"strict" : false
 				},
 				{
-					"name" : "in0[0]",
+					"name" : "saldo_restante[7]",
 					"strict" : false
 				},
 				{
-					"name" : "s0",
+					"name" : "saldo_restante[8]",
 					"strict" : false
 				},
 				{
-					"name" : "s1",
+					"name" : "saldo_restante[9]",
 					"strict" : false
 				},
 				{
-					"name" : "in2[0]",
+					"name" : "saldo_restante[10]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[0]",
+					"name" : "saldo_restante[11]",
 					"strict" : false
 				},
 				{
-					"name" : "in3[0]",
+					"name" : "saldo_restante[12]",
 					"strict" : false
 				},
 				{
-					"name" : "in0[1]",
+					"name" : "saldo_restante[13]",
 					"strict" : false
 				},
 				{
-					"name" : "in2[1]",
+					"name" : "saldo_restante[14]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[1]",
+					"name" : "saldo_restante[15]",
 					"strict" : false
 				},
 				{
-					"name" : "in3[1]",
+					"name" : "saldo_restante[16]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[2]",
+					"name" : "saldo_restante[17]",
 					"strict" : false
 				},
 				{
-					"name" : "in2[2]",
+					"name" : "saldo_restante[18]",
 					"strict" : false
 				},
 				{
-					"name" : "in0[2]",
+					"name" : "saldo_restante[19]",
 					"strict" : false
 				},
 				{
-					"name" : "in3[2]",
+					"name" : "saldo_restante[20]",
 					"strict" : false
 				},
 				{
-					"name" : "in0[3]",
+					"name" : "saldo_restante[21]",
 					"strict" : false
 				},
 				{
-					"name" : "in2[3]",
+					"name" : "saldo_restante[22]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[3]",
+					"name" : "saldo_restante[23]",
 					"strict" : false
 				},
 				{
-					"name" : "in3[3]",
+					"name" : "saldo_restante[24]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[4]",
+					"name" : "saldo_restante[25]",
 					"strict" : false
 				},
 				{
-					"name" : "in2[4]",
+					"name" : "saldo_restante[26]",
 					"strict" : false
 				},
 				{
-					"name" : "in0[4]",
+					"name" : "saldo_restante[27]",
 					"strict" : false
 				},
 				{
-					"name" : "in3[4]",
+					"name" : "saldo_restante[28]",
 					"strict" : false
 				},
 				{
-					"name" : "in0[5]",
+					"name" : "saldo_restante[29]",
 					"strict" : false
 				},
 				{
-					"name" : "in2[5]",
+					"name" : "saldo_restante[30]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[5]",
+					"name" : "saldo_restante[31]",
 					"strict" : false
 				},
 				{
-					"name" : "in3[5]",
+					"name" : "valor_compra[0]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[6]",
+					"name" : "valor_compra[1]",
 					"strict" : false
 				},
 				{
-					"name" : "in2[6]",
+					"name" : "valor_compra[2]",
 					"strict" : false
 				},
 				{
-					"name" : "in0[6]",
+					"name" : "valor_compra[3]",
 					"strict" : false
 				},
 				{
-					"name" : "in3[6]",
+					"name" : "valor_compra[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[7]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[8]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[9]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[10]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[11]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[12]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[13]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[14]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[15]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[16]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[17]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[18]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[19]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[20]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[21]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[22]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[23]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[24]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[25]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[26]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[27]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[28]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[29]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[30]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_compra[31]",
+					"strict" : false
+				},
+				{
+					"name" : "quantidade_itens[0]",
+					"strict" : false
+				},
+				{
+					"name" : "quantidade_itens[1]",
+					"strict" : false
+				},
+				{
+					"name" : "quantidade_itens[2]",
+					"strict" : false
+				},
+				{
+					"name" : "quantidade_itens[3]",
+					"strict" : false
+				},
+				{
+					"name" : "quantidade_itens[4]",
+					"strict" : false
+				},
+				{
+					"name" : "quantidade_itens[5]",
+					"strict" : false
+				},
+				{
+					"name" : "quantidade_itens[6]",
+					"strict" : false
+				},
+				{
+					"name" : "total_itens_lt_32",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_lt_total",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[7]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[8]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[9]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[10]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[11]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[12]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[13]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[14]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[15]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[16]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[17]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[18]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[19]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[20]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[21]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[22]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[23]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[24]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[25]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[26]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[27]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[28]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[29]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[30]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[31]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[0]",
+					"strict" : false
+				},
+				{
+					"name" : "del",
+					"strict" : false
+				},
+				{
+					"name" : "add",
+					"strict" : false
+				},
+				{
+					"name" : "clr_total",
+					"strict" : false
+				},
+				{
+					"name" : "ld_total",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[7]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[8]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[9]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[10]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[11]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[12]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[13]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[14]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[15]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[16]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[17]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[18]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[19]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[20]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[21]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[22]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[23]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[24]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[25]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[26]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[27]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[28]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[29]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[30]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_produto[31]",
+					"strict" : false
+				},
+				{
+					"name" : "clr_total_itens",
+					"strict" : false
+				},
+				{
+					"name" : "ld_total_itens",
 					"strict" : false
 				}
 			]
