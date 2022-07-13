@@ -1,0 +1,22 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity total_itens_reg is
+    port (
+        total_itens_in : in std_logic_vector(7 downto 0);
+        ld_total_itens, clock : in std_logic;
+        total_itens_out : out std_logic_vector(7 downto 0)
+    );
+end total_itens_reg;
+
+architecture total_itens_reg of total_itens_reg is
+    begin
+    reg: process(clock)
+        begin
+        if (rising_edge(clock)) then
+            if (ld_total_itens = '1') then
+                total_itens_out <= total_itens_in;
+            end if;
+        end if;
+    end process;
+end total_itens_reg;

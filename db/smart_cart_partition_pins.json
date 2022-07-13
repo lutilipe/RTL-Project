@@ -1,0 +1,269 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "saldo_lte_total",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[31]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[31]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[30]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[30]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[29]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[29]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[28]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[28]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[27]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[27]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[26]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[26]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[25]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[25]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[24]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[24]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[23]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[23]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[22]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[22]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[21]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[21]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[20]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[20]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[19]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[19]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[18]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[18]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[17]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[17]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[16]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[16]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[15]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[15]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[14]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[14]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[13]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[13]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[12]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[12]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[11]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[11]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[10]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[10]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[9]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[9]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[8]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[8]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[7]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[7]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[6]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[6]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[5]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[5]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[4]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[4]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[3]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[2]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[1]",
+					"strict" : false
+				},
+				{
+					"name" : "valor_total[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saldo_cartao[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
