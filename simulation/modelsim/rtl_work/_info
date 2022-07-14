@@ -8,41 +8,41 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/projeto/simulation/modelsim
-Ecomparador_saldo
-Z1 w1657752018
-Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Etb_total_reg
+Z1 w1657757886
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z7 8C:/projeto/comparador_saldo.vhd
-Z8 FC:/projeto/comparador_saldo.vhd
+Z7 8C:/projeto/tb_total_reg.vhd
+Z8 FC:/projeto/tb_total_reg.vhd
 l0
-L8
-VWkjYWO=D;e`e]4C4HY[2B1
-!s100 =l<QDf6:<6ECC3fencjQC2
+L6
+VW97N=O2dk3lSDa:Q2E]a[0
+!s100 `Vod=mTXeJbIj6^6:j@HX0
 Z9 OV;C;10.5b;63
 31
-Z10 !s110 1657752661
+Z10 !s110 1657757926
 !i10b 1
-Z11 !s108 1657752661.000000
-Z12 !s90 -reportprogress|300|-93|-work|work|C:/projeto/comparador_saldo.vhd|
-Z13 !s107 C:/projeto/comparador_saldo.vhd|
+Z11 !s108 1657757926.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/projeto/tb_total_reg.vhd|
+Z13 !s107 C:/projeto/tb_total_reg.vhd|
 !i113 1
 Z14 o-93 -work work
 Z15 tExplicit 1 CvgOpt 0
-Acomparador_saldo
+Ateste
 R2
 R3
 R4
 R5
 R6
-DEx4 work 16 comparador_saldo 0 22 WkjYWO=D;e`e]4C4HY[2B1
+DEx4 work 12 tb_total_reg 0 22 W97N=O2dk3lSDa:Q2E]a[0
 l22
-L20
-VDKeIG?SfGXK?meVnk;EkI1
-!s100 TVDR3nVb<EL`@615PB@1@2
+L9
+VRb^3dbEOb<oY@=ccAEYTO3
+!s100 cizaPN_gW66dUaU?DQ:R:3
 R9
 31
 R10
@@ -53,48 +53,44 @@ R13
 !i113 1
 R14
 R15
-Etb_comparador_saldo
-Z16 w1657672546
+Etotal_reg
+Z16 w1657661689
 R4
-R3
-R2
 R5
 R6
 R0
-Z17 8C:/projeto/tb_comparador_saldo.vhd
-Z18 FC:/projeto/tb_comparador_saldo.vhd
+Z17 8C:/projeto/total_reg.vhd
+Z18 FC:/projeto/total_reg.vhd
 l0
-L6
-VlSh?5YZ5@R8i]DeIKI7^71
-!s100 D_W3EGJFWl6QJO:_=4Kj21
+L5
+VG_oCkl:C<6[YHT;aGjB6[0
+!s100 >ABW;0J11AlRc[d1MPV2g3
 R9
 31
 R10
 !i10b 1
-R11
-Z19 !s90 -reportprogress|300|-93|-work|work|C:/projeto/tb_comparador_saldo.vhd|
-Z20 !s107 C:/projeto/tb_comparador_saldo.vhd|
+Z19 !s108 1657757925.000000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/projeto/total_reg.vhd|
+Z21 !s107 C:/projeto/total_reg.vhd|
 !i113 1
 R14
 R15
-Ateste
+Atotal_reg
 R4
-R3
-R2
 R5
 R6
-DEx4 work 19 tb_comparador_saldo 0 22 lSh?5YZ5@R8i]DeIKI7^71
-l22
-L9
-Vk5D2A3]2?;c38Wee:Z>`>1
-!s100 Pon3EcTQ7E2C:F;k`onXI2
+DEx4 work 9 total_reg 0 22 G_oCkl:C<6[YHT;aGjB6[0
+l14
+L13
+V2[<5nU;H36>67[Pc=bco]1
+!s100 51DG]zUK`E4B:3XVh^H1m0
 R9
 31
 R10
 !i10b 1
-R11
 R19
 R20
+R21
 !i113 1
 R14
 R15

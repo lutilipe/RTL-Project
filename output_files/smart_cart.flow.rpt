@@ -1,5 +1,5 @@
 Flow report for smart_cart
-Wed Jul 13 21:00:48 2022
+Wed Jul 13 21:20:19 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Jul 13 21:00:48 2022       ;
+; Flow Status                        ; Successful - Wed Jul 13 21:20:19 2022       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; smart_cart                                  ;
 ; Top-level Entity Name              ; Controladora                                ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/13/2022 21:00:25 ;
+; Start date & time ; 07/13/2022 21:19:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; smart_cart          ;
 +-------------------+---------------------+
@@ -76,30 +76,36 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+--------------+---------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name  ; Section Id          ;
 +--------------------------------------+----------------------------------------+---------------+--------------+---------------------+
-; COMPILER_SIGNATURE_ID                ; 167381581466605.165775682508668        ; --            ; --           ; --                  ;
+; COMPILER_SIGNATURE_ID                ; 167381581466605.165775799310632        ; --            ; --           ; --                  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_comparador_itens ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_decrementador    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_somador          ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_subtrator        ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_comparador_saldo ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_total_itens_reg  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_total_reg        ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_incrementador    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_mux_4_1          ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_comparador_saldo                    ; --            ; --           ; eda_simulation      ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_total_reg                           ; --            ; --           ; eda_simulation      ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --           ; eda_simulation      ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                 ; <None>        ; --           ; --                  ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --           ; eda_simulation      ;
 ; EDA_TEST_BENCH_FILE                  ; tb_comparador_itens.vhd                ; --            ; --           ; tb_comparador_itens ;
+; EDA_TEST_BENCH_FILE                  ; tb_decrementador.vhd                   ; --            ; --           ; tb_decrementador    ;
 ; EDA_TEST_BENCH_FILE                  ; tb_somador.vhd                         ; --            ; --           ; tb_somador          ;
 ; EDA_TEST_BENCH_FILE                  ; tb_subtrator.vhd                       ; --            ; --           ; tb_subtrator        ;
 ; EDA_TEST_BENCH_FILE                  ; tb_comparador_saldo.vhd                ; --            ; --           ; tb_comparador_saldo ;
 ; EDA_TEST_BENCH_FILE                  ; tb_total_itens_reg.vhd                 ; --            ; --           ; tb_total_itens_reg  ;
+; EDA_TEST_BENCH_FILE                  ; tb_total_reg.vhd                       ; --            ; --           ; tb_total_reg        ;
 ; EDA_TEST_BENCH_FILE                  ; tb_incrementador.vhd                   ; --            ; --           ; tb_incrementador    ;
 ; EDA_TEST_BENCH_FILE                  ; tb_mux_4_1.vhd                         ; --            ; --           ; tb_mux_4_1          ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_comparador_itens                    ; --            ; --           ; tb_comparador_itens ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_decrementador                       ; --            ; --           ; tb_decrementador    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_somador                             ; --            ; --           ; tb_somador          ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_subtrator                           ; --            ; --           ; tb_subtrator        ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_comparador_saldo                    ; --            ; --           ; tb_comparador_saldo ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_total_itens_reg                     ; --            ; --           ; tb_total_itens_reg  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_total_reg                           ; --            ; --           ; tb_total_reg        ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_incrementador                       ; --            ; --           ; tb_incrementador    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_mux_4_1                             ; --            ; --           ; tb_mux_4_1          ;
 ; EDA_TEST_BENCH_NAME                  ; tb_somador                             ; --            ; --           ; eda_simulation      ;
@@ -109,11 +115,15 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TEST_BENCH_NAME                  ; tb_incrementador                       ; --            ; --           ; eda_simulation      ;
 ; EDA_TEST_BENCH_NAME                  ; tb_comparador_itens                    ; --            ; --           ; eda_simulation      ;
 ; EDA_TEST_BENCH_NAME                  ; tb_comparador_saldo                    ; --            ; --           ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; tb_decrementador                       ; --            ; --           ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; tb_total_reg                           ; --            ; --           ; eda_simulation      ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_comparador_itens ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_decrementador    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_somador          ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_subtrator        ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_comparador_saldo ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_total_itens_reg  ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_total_reg        ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_incrementador    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_mux_4_1          ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --           ; eda_simulation      ;
@@ -130,12 +140,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4794 MB             ; 00:00:27                           ;
-; Fitter               ; 00:00:04     ; 1.0                     ; 5493 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:00     ; 1.0                     ; 4678 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4779 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4638 MB             ; 00:00:01                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:36                           ;
+; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4793 MB             ; 00:00:31                           ;
+; Fitter               ; 00:00:05     ; 1.0                     ; 5493 MB             ; 00:00:06                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4678 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4767 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4638 MB             ; 00:00:01                           ;
+; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:41                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
