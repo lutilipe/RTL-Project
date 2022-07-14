@@ -5,6 +5,7 @@ use ieee.numeric_std.all;
 entity Controladora is
     port ( 
 		--Entradas--
+
 		inicia_compra : in std_logic;
 		finaliza_compra : in std_logic;
 		cancelar : in std_logic;
@@ -32,7 +33,7 @@ entity Controladora is
 		ler_pagamento : out std_logic
     );
 
-end entity;
+end Controladora;
 
 architecture RTLControladora of Controladora is
 

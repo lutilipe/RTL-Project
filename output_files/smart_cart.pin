@@ -65,152 +65,263 @@
  ---------------------------------------------------------------------------------
 
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-CHIP  "smart_cart"  ASSIGNED TO AN: EP4CE6E22C6
+CHIP  "smart_cart"  ASSIGNED TO AN: EP4CE6F17C6
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-RESERVED_INPUT_WITH_WEAK_PULLUP : 1         :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 2         :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 3         :        :                   :         : 1         :                
-GND                          : 4         : gnd    :                   :         :           :                
-VCCINT                       : 5         : power  :                   : 1.2V    :           :                
-~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 6         : input  : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 7         :        :                   :         : 1         :                
-~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 8         : input  : 2.5 V             :         : 1         : N              
-nSTATUS                      : 9         :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 10        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 11        :        :                   :         : 1         :                
-~ALTERA_DCLK~                : 12        : output : 2.5 V             :         : 1         : N              
-~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : 13        : input  : 2.5 V             :         : 1         : N              
-nCONFIG                      : 14        :        :                   :         : 1         :                
-TDI                          : 15        : input  :                   :         : 1         :                
-TCK                          : 16        : input  :                   :         : 1         :                
-VCCIO1                       : 17        : power  :                   : 2.5V    : 1         :                
-TMS                          : 18        : input  :                   :         : 1         :                
-GND                          : 19        : gnd    :                   :         :           :                
-TDO                          : 20        : output :                   :         : 1         :                
-nCE                          : 21        :        :                   :         : 1         :                
-GND                          : 22        : gnd    :                   :         :           :                
-clock                        : 23        : input  : 2.5 V             :         : 1         : N              
-clear                        : 24        : input  : 2.5 V             :         : 2         : N              
-GND+                         : 25        :        :                   :         : 2         :                
-VCCIO2                       : 26        : power  :                   : 2.5V    : 2         :                
-GND                          : 27        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 28        :        :                   :         : 2         :                
-VCCINT                       : 29        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 30        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 31        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 32        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 33        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 34        :        :                   :         : 2         :                
-VCCA1                        : 35        : power  :                   : 2.5V    :           :                
-GNDA1                        : 36        : gnd    :                   :         :           :                
-VCCD_PLL1                    : 37        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 38        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 39        :        :                   :         : 3         :                
-VCCIO3                       : 40        : power  :                   : 2.5V    : 3         :                
-GND                          : 41        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 42        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 43        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 44        :        :                   :         : 3         :                
-VCCINT                       : 45        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 46        :        :                   :         : 3         :                
-VCCIO3                       : 47        : power  :                   : 2.5V    : 3         :                
-GND                          : 48        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 49        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 50        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 51        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 52        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 53        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 54        :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 55        :        :                   :         : 4         :                
-VCCIO4                       : 56        : power  :                   : 2.5V    : 4         :                
-GND                          : 57        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 58        :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 59        :        :                   :         : 4         :                
-concluido                    : 60        : output : 2.5 V             :         : 4         : N              
-VCCINT                       : 61        : power  :                   : 1.2V    :           :                
-VCCIO4                       : 62        : power  :                   : 2.5V    : 4         :                
-GND                          : 63        : gnd    :                   :         :           :                
-desconta                     : 64        : output : 2.5 V             :         : 4         : N              
-clr_total                    : 65        : output : 2.5 V             :         : 4         : N              
-clr_total_itens              : 66        : output : 2.5 V             :         : 4         : N              
-total_itens_lt_32            : 67        : input  : 2.5 V             :         : 4         : N              
-saldo_lt_total               : 68        : input  : 2.5 V             :         : 4         : N              
-erro                         : 69        : output : 2.5 V             :         : 4         : N              
-cartao_lido                  : 70        : input  : 2.5 V             :         : 4         : N              
-cancelar                     : 71        : input  : 2.5 V             :         : 4         : N              
-inicia_compra                : 72        : input  : 2.5 V             :         : 4         : N              
-pagar_compra                 : 73        : input  : 2.5 V             :         : 5         : N              
-finaliza_compra              : 74        : input  : 2.5 V             :         : 5         : N              
-del                          : 75        : input  : 2.5 V             :         : 5         : N              
-add                          : 76        : input  : 2.5 V             :         : 5         : N              
-ler_pagamento                : 77        : output : 2.5 V             :         : 5         : N              
-VCCINT                       : 78        : power  :                   : 1.2V    :           :                
-GND                          : 79        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 80        :        :                   :         : 5         :                
-VCCIO5                       : 81        : power  :                   : 2.5V    : 5         :                
-GND                          : 82        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 83        :        :                   :         : 5         :                
-ld_total_itens               : 84        : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 85        :        :                   :         : 5         :                
-ld_total                     : 86        : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 87        :        :                   :         : 5         :                
-GND+                         : 88        :        :                   :         : 5         :                
-GND+                         : 89        :        :                   :         : 5         :                
-GND+                         : 90        :        :                   :         : 6         :                
-GND+                         : 91        :        :                   :         : 6         :                
-CONF_DONE                    : 92        :        :                   :         : 6         :                
-VCCIO6                       : 93        : power  :                   : 2.5V    : 6         :                
-MSEL0                        : 94        :        :                   :         : 6         :                
-GND                          : 95        : gnd    :                   :         :           :                
-MSEL1                        : 96        :        :                   :         : 6         :                
-MSEL2                        : 97        :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 98        :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 99        :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 100       :        :                   :         : 6         :                
-~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : 101       : output : 2.5 V             :         : 6         : N              
-VCCINT                       : 102       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 103       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 104       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 105       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 106       :        :                   :         : 6         :                
-VCCA2                        : 107       : power  :                   : 2.5V    :           :                
-GNDA2                        : 108       : gnd    :                   :         :           :                
-VCCD_PLL2                    : 109       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 110       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 111       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 112       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 113       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 114       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 115       :        :                   :         : 7         :                
-VCCINT                       : 116       : power  :                   : 1.2V    :           :                
-VCCIO7                       : 117       : power  :                   : 2.5V    : 7         :                
-GND                          : 118       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 119       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 120       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 121       :        :                   :         : 7         :                
-VCCIO7                       : 122       : power  :                   : 2.5V    : 7         :                
-GND                          : 123       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 124       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 125       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 126       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 127       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 128       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 129       :        :                   :         : 8         :                
-VCCIO8                       : 130       : power  :                   : 2.5V    : 8         :                
-GND                          : 131       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 132       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 133       :        :                   :         : 8         :                
-VCCINT                       : 134       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 135       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 136       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 137       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 138       :        :                   :         : 8         :                
-VCCIO8                       : 139       : power  :                   : 2.5V    : 8         :                
-GND                          : 140       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 141       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 142       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 143       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 144       :        :                   :         : 8         :                
-GND                          : EPAD      :        :                   :         :           :                
+VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A2        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
+saldo_cartao[8]              : A4        : input  : 2.5 V             :         : 8         : N              
+valor_produto[0]             : A5        : input  : 2.5 V             :         : 8         : N              
+valor_produto[20]            : A6        : input  : 2.5 V             :         : 8         : N              
+quantidade_itens[6]          : A7        : output : 2.5 V             :         : 8         : N              
+valor_produto[31]            : A8        : input  : 2.5 V             :         : 8         : N              
+valor_produto[8]             : A9        : input  : 2.5 V             :         : 7         : N              
+quantidade_itens[2]          : A10       : output : 2.5 V             :         : 7         : N              
+valor_compra[13]             : A11       : output : 2.5 V             :         : 7         : N              
+saldo_cartao[3]              : A12       : input  : 2.5 V             :         : 7         : N              
+saldo_cartao[22]             : A13       : input  : 2.5 V             :         : 7         : N              
+valor_produto[10]            : A14       : input  : 2.5 V             :         : 7         : N              
+valor_produto[21]            : A15       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B1        :        :                   :         : 1         :                
+GND                          : B2        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
+desconta                     : B4        : output : 2.5 V             :         : 8         : N              
+concluido                    : B5        : output : 2.5 V             :         : 8         : N              
+saldo_cartao[27]             : B6        : input  : 2.5 V             :         : 8         : N              
+quantidade_itens[5]          : B7        : output : 2.5 V             :         : 8         : N              
+quantidade_itens[4]          : B8        : output : 2.5 V             :         : 8         : N              
+saldo_restante[12]           : B9        : output : 2.5 V             :         : 7         : N              
+valor_produto[6]             : B10       : input  : 2.5 V             :         : 7         : N              
+valor_compra[10]             : B11       : output : 2.5 V             :         : 7         : N              
+saldo_cartao[5]              : B12       : input  : 2.5 V             :         : 7         : N              
+ler_pagamento                : B13       : output : 2.5 V             :         : 7         : N              
+valor_produto[14]            : B14       : input  : 2.5 V             :         : 7         : N              
+GND                          : B15       : gnd    :                   :         :           :                
+valor_produto[17]            : B16       : input  : 2.5 V             :         : 6         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
+GND                          : C5        : gnd    :                   :         :           :                
+valor_produto[5]             : C6        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
+valor_compra[22]             : C8        : output : 2.5 V             :         : 8         : N              
+saldo_cartao[13]             : C9        : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
+valor_produto[12]            : C11       : input  : 2.5 V             :         : 7         : N              
+GND                          : C12       : gnd    :                   :         :           :                
+VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
+valor_produto[13]            : C14       : input  : 2.5 V             :         : 7         : N              
+saldo_cartao[11]             : C15       : input  : 2.5 V             :         : 6         : N              
+valor_compra[15]             : C16       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D4        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
+GND                          : D7        : gnd    :                   :         :           :                
+erro                         : D8        : output : 2.5 V             :         : 8         : N              
+valor_produto[1]             : D9        : input  : 2.5 V             :         : 7         : N              
+GND                          : D10       : gnd    :                   :         :           :                
+saldo_restante[9]            : D11       : output : 2.5 V             :         : 7         : N              
+saldo_cartao[9]              : D12       : input  : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
+valor_produto[24]            : D14       : input  : 2.5 V             :         : 7         : N              
+valor_compra[5]              : D15       : output : 2.5 V             :         : 6         : N              
+valor_compra[12]             : D16       : output : 2.5 V             :         : 6         : N              
+clock                        : E1        : input  : 2.5 V             :         : 1         : N              
+GND                          : E2        : gnd    :                   :         :           :                
+VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
+GND                          : E4        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E5        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E7        :        :                   :         : 8         :                
+valor_produto[30]            : E8        : input  : 2.5 V             :         : 8         : N              
+valor_produto[7]             : E9        : input  : 2.5 V             :         : 7         : N              
+valor_produto[11]            : E10       : input  : 2.5 V             :         : 7         : N              
+saldo_cartao[12]             : E11       : input  : 2.5 V             :         : 7         : N              
+GNDA2                        : E12       : gnd    :                   :         :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
+GND+                         : E15       :        :                   :         : 6         :                
+finaliza_compra              : E16       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F3        :        :                   :         : 1         :                
+nSTATUS                      : F4        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 1         :                
+quantidade_itens[0]          : F6        : output : 2.5 V             :         : 8         : N              
+valor_produto[4]             : F7        : input  : 2.5 V             :         : 8         : N              
+valor_compra[16]             : F8        : output : 2.5 V             :         : 8         : N              
+valor_produto[16]            : F9        : input  : 2.5 V             :         : 7         : N              
+valor_produto[9]             : F10       : input  : 2.5 V             :         : 7         : N              
+valor_produto[19]            : F11       : input  : 2.5 V             :         : 7         : N              
+VCCA2                        : F12       : power  :                   : 2.5V    :           :                
+cartao_lido                  : F13       : input  : 2.5 V             :         : 6         : N              
+del                          : F14       : input  : 2.5 V             :         : 6         : N              
+pagar_compra                 : F15       : input  : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G2        :        :                   :         : 1         :                
+VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
+GND                          : G4        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
+VCCINT                       : G6        : power  :                   : 1.2V    :           :                
+VCCINT                       : G7        : power  :                   : 1.2V    :           :                
+VCCINT                       : G8        : power  :                   : 1.2V    :           :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+VCCINT                       : G10       : power  :                   : 1.2V    :           :                
+saldo_cartao[15]             : G11       : input  : 2.5 V             :         : 6         : N              
+MSEL2                        : G12       :        :                   :         : 6         :                
+GND                          : G13       : gnd    :                   :         :           :                
+VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
+valor_compra[9]              : G15       : output : 2.5 V             :         : 6         : N              
+add                          : G16       : input  : 2.5 V             :         : 6         : N              
+~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
+TCK                          : H3        : input  :                   :         : 1         :                
+TDI                          : H4        : input  :                   :         : 1         :                
+nCONFIG                      : H5        :        :                   :         : 1         :                
+VCCINT                       : H6        : power  :                   : 1.2V    :           :                
+GND                          : H7        : gnd    :                   :         :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+VCCINT                       : H11       : power  :                   : 1.2V    :           :                
+MSEL1                        : H12       :        :                   :         : 6         :                
+MSEL0                        : H13       :        :                   :         : 6         :                
+CONF_DONE                    : H14       :        :                   :         : 6         :                
+GND                          : H15       : gnd    :                   :         :           :                
+GND                          : H16       : gnd    :                   :         :           :                
+valor_compra[19]             : J1        : output : 2.5 V             :         : 2         : N              
+valor_compra[0]              : J2        : output : 2.5 V             :         : 2         : N              
+nCE                          : J3        :        :                   :         : 1         :                
+TDO                          : J4        : output :                   :         : 1         :                
+TMS                          : J5        : input  :                   :         : 1         :                
+valor_compra[8]              : J6        : output : 2.5 V             :         : 2         : N              
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+valor_compra[4]              : J11       : output : 2.5 V             :         : 5         : N              
+valor_compra[1]              : J12       : output : 2.5 V             :         : 5         : N              
+valor_produto[3]             : J13       : input  : 2.5 V             :         : 5         : N              
+valor_produto[15]            : J14       : input  : 2.5 V             :         : 5         : N              
+valor_produto[22]            : J15       : input  : 2.5 V             :         : 5         : N              
+valor_compra[14]             : J16       : output : 2.5 V             :         : 5         : N              
+valor_compra[2]              : K1        : output : 2.5 V             :         : 2         : N              
+saldo_cartao[14]             : K2        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
+GND                          : K4        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K5        :        :                   :         : 2         :                
+saldo_cartao[0]              : K6        : input  : 2.5 V             :         : 2         : N              
+VCCINT                       : K7        : power  :                   : 1.2V    :           :                
+saldo_cartao[6]              : K8        : input  : 2.5 V             :         : 3         : N              
+saldo_restante[27]           : K9        : output : 2.5 V             :         : 4         : N              
+saldo_cartao[4]              : K10       : input  : 2.5 V             :         : 4         : N              
+saldo_cartao[19]             : K11       : input  : 2.5 V             :         : 5         : N              
+saldo_cartao[28]             : K12       : input  : 2.5 V             :         : 5         : N              
+GND                          : K13       : gnd    :                   :         :           :                
+VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
+valor_compra[20]             : K15       : output : 2.5 V             :         : 5         : N              
+saldo_cartao[7]              : K16       : input  : 2.5 V             :         : 5         : N              
+saldo_cartao[16]             : L1        : input  : 2.5 V             :         : 2         : N              
+valor_compra[26]             : L2        : output : 2.5 V             :         : 2         : N              
+saldo_cartao[23]             : L3        : input  : 2.5 V             :         : 2         : N              
+valor_compra[28]             : L4        : output : 2.5 V             :         : 2         : N              
+VCCA1                        : L5        : power  :                   : 2.5V    :           :                
+valor_compra[27]             : L6        : output : 2.5 V             :         : 2         : N              
+quantidade_itens[3]          : L7        : output : 2.5 V             :         : 3         : N              
+valor_produto[29]            : L8        : input  : 2.5 V             :         : 3         : N              
+saldo_cartao[25]             : L9        : input  : 2.5 V             :         : 4         : N              
+saldo_restante[1]            : L10       : output : 2.5 V             :         : 4         : N              
+saldo_restante[11]           : L11       : output : 2.5 V             :         : 4         : N              
+saldo_cartao[31]             : L12       : input  : 2.5 V             :         : 5         : N              
+saldo_restante[6]            : L13       : output : 2.5 V             :         : 5         : N              
+valor_compra[21]             : L14       : output : 2.5 V             :         : 5         : N              
+valor_compra[18]             : L15       : output : 2.5 V             :         : 5         : N              
+saldo_restante[7]            : L16       : output : 2.5 V             :         : 5         : N              
+valor_produto[18]            : M1        : input  : 2.5 V             :         : 2         : N              
+clear_controladora           : M2        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
+GND                          : M4        : gnd    :                   :         :           :                
+GNDA1                        : M5        : gnd    :                   :         :           :                
+valor_compra[6]              : M6        : output : 2.5 V             :         : 3         : N              
+valor_produto[2]             : M7        : input  : 2.5 V             :         : 3         : N              
+saldo_restante[5]            : M8        : output : 2.5 V             :         : 3         : N              
+saldo_restante[30]           : M9        : output : 2.5 V             :         : 4         : N              
+saldo_restante[16]           : M10       : output : 2.5 V             :         : 4         : N              
+saldo_restante[4]            : M11       : output : 2.5 V             :         : 4         : N              
+saldo_cartao[18]             : M12       : input  : 2.5 V             :         : 5         : N              
+GND                          : M13       : gnd    :                   :         :           :                
+VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
+GND+                         : M15       :        :                   :         : 5         :                
+GND+                         : M16       :        :                   :         : 5         :                
+valor_compra[29]             : N1        : output : 2.5 V             :         : 2         : N              
+saldo_restante[23]           : N2        : output : 2.5 V             :         : 2         : N              
+saldo_restante[2]            : N3        : output : 2.5 V             :         : 3         : N              
+VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
+valor_compra[31]             : N5        : output : 2.5 V             :         : 3         : N              
+saldo_restante[28]           : N6        : output : 2.5 V             :         : 3         : N              
+GND                          : N7        : gnd    :                   :         :           :                
+valor_compra[17]             : N8        : output : 2.5 V             :         : 3         : N              
+saldo_restante[20]           : N9        : output : 2.5 V             :         : 4         : N              
+GND                          : N10       : gnd    :                   :         :           :                
+saldo_restante[14]           : N11       : output : 2.5 V             :         : 4         : N              
+saldo_restante[18]           : N12       : output : 2.5 V             :         : 4         : N              
+saldo_cartao[30]             : N13       : input  : 2.5 V             :         : 5         : N              
+saldo_cartao[20]             : N14       : input  : 2.5 V             :         : 5         : N              
+saldo_cartao[10]             : N15       : input  : 2.5 V             :         : 5         : N              
+valor_compra[23]             : N16       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P1        :        :                   :         : 2         :                
+saldo_cartao[26]             : P2        : input  : 2.5 V             :         : 2         : N              
+saldo_restante[10]           : P3        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
+GND                          : P5        : gnd    :                   :         :           :                
+valor_produto[25]            : P6        : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
+inicia_compra                : P8        : input  : 2.5 V             :         : 3         : N              
+saldo_cartao[1]              : P9        : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
+saldo_cartao[24]             : P11       : input  : 2.5 V             :         : 4         : N              
+GND                          : P12       : gnd    :                   :         :           :                
+VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
+saldo_restante[15]           : P14       : output : 2.5 V             :         : 4         : N              
+saldo_cartao[2]              : P15       : input  : 2.5 V             :         : 5         : N              
+valor_compra[30]             : P16       : output : 2.5 V             :         : 5         : N              
+valor_produto[28]            : R1        : input  : 2.5 V             :         : 2         : N              
+GND                          : R2        : gnd    :                   :         :           :                
+saldo_restante[24]           : R3        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R4        :        :                   :         : 3         :                
+valor_produto[23]            : R5        : input  : 2.5 V             :         : 3         : N              
+saldo_cartao[29]             : R6        : input  : 2.5 V             :         : 3         : N              
+valor_compra[3]              : R7        : output : 2.5 V             :         : 3         : N              
+saldo_restante[31]           : R8        : output : 2.5 V             :         : 3         : N              
+valor_compra[7]              : R9        : output : 2.5 V             :         : 4         : N              
+valor_compra[11]             : R10       : output : 2.5 V             :         : 4         : N              
+valor_produto[26]            : R11       : input  : 2.5 V             :         : 4         : N              
+saldo_restante[8]            : R12       : output : 2.5 V             :         : 4         : N              
+saldo_restante[19]           : R13       : output : 2.5 V             :         : 4         : N              
+saldo_restante[26]           : R14       : output : 2.5 V             :         : 4         : N              
+GND                          : R15       : gnd    :                   :         :           :                
+saldo_cartao[21]             : R16       : input  : 2.5 V             :         : 5         : N              
+VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
+valor_produto[27]            : T2        : input  : 2.5 V             :         : 3         : N              
+saldo_restante[0]            : T3        : output : 2.5 V             :         : 3         : N              
+saldo_restante[3]            : T4        : output : 2.5 V             :         : 3         : N              
+saldo_restante[22]           : T5        : output : 2.5 V             :         : 3         : N              
+quantidade_itens[1]          : T6        : output : 2.5 V             :         : 3         : N              
+valor_compra[25]             : T7        : output : 2.5 V             :         : 3         : N              
+saldo_restante[29]           : T8        : output : 2.5 V             :         : 3         : N              
+cancelar                     : T9        : input  : 2.5 V             :         : 4         : N              
+saldo_restante[17]           : T10       : output : 2.5 V             :         : 4         : N              
+valor_compra[24]             : T11       : output : 2.5 V             :         : 4         : N              
+saldo_cartao[17]             : T12       : input  : 2.5 V             :         : 4         : N              
+saldo_restante[13]           : T13       : output : 2.5 V             :         : 4         : N              
+saldo_restante[21]           : T14       : output : 2.5 V             :         : 4         : N              
+saldo_restante[25]           : T15       : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

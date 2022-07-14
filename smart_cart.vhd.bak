@@ -1,0 +1,165 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity smart_cart is
+port (
+		BotaoManutencaoFeita : in std_logic; 
+		BotaoCombustivelCheio  : in std_logic;
+		BotaoPesar  : in std_logic;
+		BotaoCarregar : in std_logic;
+		BotaoLiga : in std_logic;
+		BotaoDesliga : in std_logic;
+		BotaoDescarregar : in std_logic;
+		
+      PesoMedido : std_logic_vector(15 downto 0);
+		TemperaturaForno : in std_logic_vector(15 downto 0);
+		Clk1ms :  in std_logic;
+		Clk : in std_logic;
+		ClrControladora : in std_logic;
+		
+		
+		AlarmePeso: out std_logic;
+		AlarmeCombustivel : out std_logic;
+		AlarmeTemperatura: out std_logic;
+		Carregar: out std_logic;
+		Descarregar: out std_logic;
+		Fogo: out std_logic;
+		AvisoFornoLigado: out std_logic;
+		AvisoCarregamentoHabilitado: out std_logic;
+		DesligamentoForcado: out std_logic;
+		
+		QtdProcessada  : out std_logic_vector(15 downto 0);
+		NivelCombustivel  : out std_logic_vector(15 downto 0)
+        );
+end smart_cart;
+
+architecture RTLsmart_cart of smart_cart is
+
+component DataPath is
+   port (
+			LdPeso : in std_logic;
+			PesoMedido : std_logic_vector(15 downto 0);
+			StartCountCarregamento : in std_logic;
+			StartCountAquecimento : in std_logic;
+			StartCountDescarregamento : in std_logic;
+			Clk : in std_logic;
+			Clk1ms : in std_logic;
+			TemperaturaForno : in std_logic_vector(15 downto 0);
+			LdAuxNivelCombustivel : in std_logic;
+			LdCombustivelNecessario : in std_logic;
+			LdNivelCombustivel : in std_logic;
+			ChaveReabastecimento : in std_logic;
+			ClrQtdProcessada : in std_logic;
+			LdQtdProcessada : in std_logic;
+			LdAuxQtdProcessada : in std_logic;
+			
+			TempoGastoGtTempoDescarregamento : out std_logic;
+			TempoGastoGtTempoAquecimento : out std_logic;
+			TempoGastoGtTempoCarregamento : out std_logic;
+			CombustivelNecessarioGtNivelCombustivel  : out std_logic;
+			TemperaturaFornoGtTemperaturaSegura : out std_logic;
+			TemperaturaFornoGtTemperaturaMax : out std_logic;
+			PesoGtPesoMax : out std_logic;
+			QtdProcessada  : out std_logic_vector(15 downto 0);
+			NivelCombustivel  : out std_logic_vector(15 downto 0)
+        );
+end component;
+
+component Controladora is
+    port 
+    ( 
+		--Entradas--
+		BotaoManutencaoFeita : in std_logic; 
+		BotaoCombustivelCheio  : in std_logic;
+		BotaoPesar  : in std_logic;
+		BotaoCarregar : in std_logic;
+		BotaoLiga : in std_logic;
+		BotaoDesliga : in std_logic;
+		BotaoDescarregar : in std_logic;
+		PesoGtPesoMax : in std_logic;
+		TempoGastoGtTempoCarregamento : in std_logic;
+		TempoGastoGtTempoDescarreamento : in std_logic;
+		TempoGastoGtTempoAquecimento : in std_logic;
+		TemperaturaFornoGtTemperaturaMax : in std_logic;
+		TemperaturaFornoGtTemperaturaSegura : in std_logic;
+		CombustivelNecessarioGtNivelCombustivel : in std_logic;
+		ClrRegEstados : in std_logic;
+		ClkRegEstados :in std_logic;
+		
+		--Saídas--
+		AlarmePeso: out std_logic;
+		AlarmeCombustivel : out std_logic;
+		AlarmeTemperatura: out std_logic;
+		Carregar: out std_logic;
+		Descarregar: out std_logic;
+		Fogo: out std_logic;
+		AvisoFornoLigado: out std_logic;
+		AvisoCarregamentoHabilitado: out std_logic;
+		DesligamentoForcado: out std_logic;
+		LdAuxQtdProcessada : out std_logic;
+		LdQtdProcessada : out std_logic;
+		LdPeso : out std_logic;
+		LdNivelCombustivel : out std_logic;
+		LdCombustivelNecessario : out std_logic;
+		LdAuxNivelCombustivel : out std_logic;
+		ClrQtdProcessada : out std_logic;
+		StartCountCarregamento : out std_logic;
+		StartCountDescarregamento : out std_logic;
+		StartCountAquecimento : out std_logic;
+		ChaveReabastecimento : out std_logic
+    );
+
+end component;
+
+signal auxCD1, auxCD2, auxCD3, auxCD4, auxCD5, auxCD6, auxCD7, auxCD8, auxCD9, auxCD10, auxCD11: std_logic;
+signal auxDC1, auxDC2, auxDC3, auxDC4, auxDC5, auxDC6, auxDC7: std_logic;
+
+begin
+A_DataPath : DataPath  port map (Clk1ms=>Clk1ms, LdPeso=>auxCD3,
+											StartCountCarregamento=>auxCD8,
+											StartCountAquecimento=>auxCD10,
+											TemperaturaForno=>TemperaturaForno,
+											StartCountDescarregamento=>auxCD9,
+											Clk=>Clk, LdAuxNivelCombustivel=>auxCD6,
+											PesoMedido=>PesoMedido,
+											LdCombustivelNecessario=>auxCD5,
+											LdNivelCombustivel=>auxCD4,
+											ChaveReabastecimento=>auxCD11,
+											ClrQtdProcessada=>auxCD7,
+											LdQtdProcessada=> auxCD2,
+											LdAuxQtdProcessada=> auxCD1,
+											TempoGastoGtTempoDescarregamento=>auxDC1,
+											TempoGastoGtTempoAquecimento=>auxDC2,
+											TempoGastoGtTempoCarregamento=>auxDC3,
+											CombustivelNecessarioGtNivelCombustivel=>auxDC4,
+											TemperaturaFornoGtTemperaturaSegura=>auxDC5,
+											TemperaturaFornoGtTemperaturaMax=>auxDC6,
+											PesoGtPesoMax=>auxDC7, QtdProcessada=>QtdProcessada,
+											NivelCombustivel=>NivelCombustivel);
+												  
+B_Controladora : Controladora  port map (BotaoManutencaoFeita=>BotaoManutencaoFeita,
+													  BotaoCombustivelCheio=>BotaoCombustivelCheio,
+													  BotaoPesar=>BotaoPesar, BotaoCarregar=>BotaoCarregar,
+													  BotaoLiga=>BotaoLiga, BotaoDesliga=>BotaoDesliga,
+													  BotaoDescarregar=>BotaoDescarregar, 
+													  PesoGtPesoMax=>auxDC7, TempoGastoGtTempoCarregamento=>auxDC3,
+													  TempoGastoGtTempoDescarreamento=>auxDC1,
+													  TempoGastoGtTempoAquecimento=>auxDC2,
+													  TemperaturaFornoGtTemperaturaMax=>auxDC6,
+													  TemperaturaFornoGtTemperaturaSegura=>auxDC5,
+													  CombustivelNecessarioGtNivelCombustivel=>auxDC4,
+													  AlarmePeso=>AlarmePeso, AlarmeCombustivel=>AlarmeCombustivel,
+													  AlarmeTemperatura=>AlarmeTemperatura, Carregar=>Carregar,
+													  Descarregar=>Descarregar, Fogo=>Fogo, 
+													  AvisoFornoLigado=>AvisoFornoLigado, 
+													  AvisoCarregamentoHabilitado=>AvisoCarregamentoHabilitado,
+													  DesligamentoForcado=>DesligamentoForcado,
+													  LdAuxQtdProcessada=>auxCD1, LdQtdProcessada=>auxCD2,
+													  LdPeso=>auxCD3, LdNivelCombustivel=>auxCD4, 
+													  LdCombustivelNecessario=>auxCD5, LdAuxNivelCombustivel=>auxCD6, 
+													  ClrQtdProcessada=>auxCD7, StartCountCarregamento=>auxCD8,
+													  StartCountDescarregamento=>auxCD9, StartCountAquecimento=>auxCD10,
+													  ChaveReabastecimento=>auxCD11, ClkRegEstados=>Clk,
+													  ClrRegEstados=>ClrControladora);
+
+end RTLsmart_cart ;
