@@ -1,15 +1,15 @@
-Fitter Status : Successful - Wed Jul 13 13:25:49 2022
+Fitter Status : Successful - Wed Jul 13 21:00:41 2022
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : smart_cart
-Top-level Entity Name : DataPath
+Top-level Entity Name : Controladora
 Family : Cyclone IV E
-Device : EP4CE6F17C6
+Device : EP4CE6E22C6
 Timing Models : Final
-Total logic elements : 140 / 6,272 ( 2 % )
-    Total combinational functions : 140 / 6,272 ( 2 % )
-    Dedicated logic registers : 39 / 6,272 ( < 1 % )
-Total registers : 39
-Total pins : 144 / 180 ( 80 % )
+Total logic elements : 18 / 6,272 ( < 1 % )
+    Total combinational functions : 18 / 6,272 ( < 1 % )
+    Dedicated logic registers : 10 / 6,272 ( < 1 % )
+Total registers : 10
+Total pins : 19 / 92 ( 21 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )

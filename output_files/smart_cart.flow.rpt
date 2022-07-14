@@ -1,5 +1,5 @@
 Flow report for smart_cart
-Wed Jul 13 13:25:55 2022
+Wed Jul 13 21:00:48 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,21 +41,21 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Jul 13 13:25:55 2022       ;
+; Flow Status                        ; Successful - Wed Jul 13 21:00:48 2022       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; smart_cart                                  ;
-; Top-level Entity Name              ; DataPath                                    ;
+; Top-level Entity Name              ; Controladora                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 140 / 6,272 ( 2 % )                         ;
-;     Total combinational functions  ; 140 / 6,272 ( 2 % )                         ;
-;     Dedicated logic registers      ; 39 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 39                                          ;
-; Total pins                         ; 144 / 180 ( 80 % )                          ;
+; Total logic elements               ; 18 / 6,272 ( < 1 % )                        ;
+;     Total combinational functions  ; 18 / 6,272 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 10 / 6,272 ( < 1 % )                        ;
+; Total registers                    ; 10                                          ;
+; Total pins                         ; 19 / 92 ( 21 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
 ; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
-; Device                             ; EP4CE6F17C6                                 ;
+; Device                             ; EP4CE6E22C6                                 ;
 ; Timing Models                      ; Final                                       ;
 +------------------------------------+---------------------------------------------+
 
@@ -65,64 +65,64 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/13/2022 13:25:27 ;
+; Start date & time ; 07/13/2022 21:00:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; smart_cart          ;
 +-------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                  ;
-+--------------------------------------+----------------------------------------+---------------+-------------+---------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id          ;
-+--------------------------------------+----------------------------------------+---------------+-------------+---------------------+
-; COMPILER_SIGNATURE_ID                ; 167381581466605.165772952706448        ; --            ; --          ; --                  ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_comparador_itens ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_somador          ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_subtrator        ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_comparador_saldo ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_total_itens_reg  ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_incrementador    ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_mux_4_1          ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_mux_4_1                             ; --            ; --          ; eda_simulation      ;
-; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --          ; eda_simulation      ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --                  ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation      ;
-; EDA_TEST_BENCH_FILE                  ; tb_comparador_itens.vhd                ; --            ; --          ; tb_comparador_itens ;
-; EDA_TEST_BENCH_FILE                  ; tb_somador.vhd                         ; --            ; --          ; tb_somador          ;
-; EDA_TEST_BENCH_FILE                  ; tb_subtrator.vhd                       ; --            ; --          ; tb_subtrator        ;
-; EDA_TEST_BENCH_FILE                  ; tb_comparador_saldo.vhd                ; --            ; --          ; tb_comparador_saldo ;
-; EDA_TEST_BENCH_FILE                  ; tb_total_itens_reg.vhd                 ; --            ; --          ; tb_total_itens_reg  ;
-; EDA_TEST_BENCH_FILE                  ; tb_incrementador.vhd                   ; --            ; --          ; tb_incrementador    ;
-; EDA_TEST_BENCH_FILE                  ; tb_mux_4_1.vhd                         ; --            ; --          ; tb_mux_4_1          ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_comparador_itens                    ; --            ; --          ; tb_comparador_itens ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_somador                             ; --            ; --          ; tb_somador          ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_subtrator                           ; --            ; --          ; tb_subtrator        ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_comparador_saldo                    ; --            ; --          ; tb_comparador_saldo ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_total_itens_reg                     ; --            ; --          ; tb_total_itens_reg  ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_incrementador                       ; --            ; --          ; tb_incrementador    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tb_mux_4_1                             ; --            ; --          ; tb_mux_4_1          ;
-; EDA_TEST_BENCH_NAME                  ; tb_somador                             ; --            ; --          ; eda_simulation      ;
-; EDA_TEST_BENCH_NAME                  ; tb_subtrator                           ; --            ; --          ; eda_simulation      ;
-; EDA_TEST_BENCH_NAME                  ; tb_mux_4_1                             ; --            ; --          ; eda_simulation      ;
-; EDA_TEST_BENCH_NAME                  ; tb_total_itens_reg                     ; --            ; --          ; eda_simulation      ;
-; EDA_TEST_BENCH_NAME                  ; tb_incrementador                       ; --            ; --          ; eda_simulation      ;
-; EDA_TEST_BENCH_NAME                  ; tb_comparador_itens                    ; --            ; --          ; eda_simulation      ;
-; EDA_TEST_BENCH_NAME                  ; tb_comparador_saldo                    ; --            ; --          ; eda_simulation      ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --          ; tb_comparador_itens ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --          ; tb_somador          ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --          ; tb_subtrator        ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --          ; tb_comparador_saldo ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --          ; tb_total_itens_reg  ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --          ; tb_incrementador    ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --          ; tb_mux_4_1          ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation      ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; DataPath    ; Top                 ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; DataPath    ; Top                 ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; DataPath    ; Top                 ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                  ;
-; TOP_LEVEL_ENTITY                     ; DataPath                               ; smart_cart    ; --          ; --                  ;
-+--------------------------------------+----------------------------------------+---------------+-------------+---------------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                   ;
++--------------------------------------+----------------------------------------+---------------+--------------+---------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name  ; Section Id          ;
++--------------------------------------+----------------------------------------+---------------+--------------+---------------------+
+; COMPILER_SIGNATURE_ID                ; 167381581466605.165775682508668        ; --            ; --           ; --                  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_comparador_itens ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_somador          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_subtrator        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_comparador_saldo ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_total_itens_reg  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_incrementador    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; tb_mux_4_1          ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_comparador_saldo                    ; --            ; --           ; eda_simulation      ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --           ; eda_simulation      ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                 ; <None>        ; --           ; --                  ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --           ; eda_simulation      ;
+; EDA_TEST_BENCH_FILE                  ; tb_comparador_itens.vhd                ; --            ; --           ; tb_comparador_itens ;
+; EDA_TEST_BENCH_FILE                  ; tb_somador.vhd                         ; --            ; --           ; tb_somador          ;
+; EDA_TEST_BENCH_FILE                  ; tb_subtrator.vhd                       ; --            ; --           ; tb_subtrator        ;
+; EDA_TEST_BENCH_FILE                  ; tb_comparador_saldo.vhd                ; --            ; --           ; tb_comparador_saldo ;
+; EDA_TEST_BENCH_FILE                  ; tb_total_itens_reg.vhd                 ; --            ; --           ; tb_total_itens_reg  ;
+; EDA_TEST_BENCH_FILE                  ; tb_incrementador.vhd                   ; --            ; --           ; tb_incrementador    ;
+; EDA_TEST_BENCH_FILE                  ; tb_mux_4_1.vhd                         ; --            ; --           ; tb_mux_4_1          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_comparador_itens                    ; --            ; --           ; tb_comparador_itens ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_somador                             ; --            ; --           ; tb_somador          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_subtrator                           ; --            ; --           ; tb_subtrator        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_comparador_saldo                    ; --            ; --           ; tb_comparador_saldo ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_total_itens_reg                     ; --            ; --           ; tb_total_itens_reg  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_incrementador                       ; --            ; --           ; tb_incrementador    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_mux_4_1                             ; --            ; --           ; tb_mux_4_1          ;
+; EDA_TEST_BENCH_NAME                  ; tb_somador                             ; --            ; --           ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; tb_subtrator                           ; --            ; --           ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; tb_mux_4_1                             ; --            ; --           ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; tb_total_itens_reg                     ; --            ; --           ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; tb_incrementador                       ; --            ; --           ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; tb_comparador_itens                    ; --            ; --           ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; tb_comparador_saldo                    ; --            ; --           ; eda_simulation      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_comparador_itens ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_somador          ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_subtrator        ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_comparador_saldo ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_total_itens_reg  ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_incrementador    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --           ; tb_mux_4_1          ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --           ; eda_simulation      ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; Controladora ; Top                 ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; Controladora ; Top                 ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; Controladora ; Top                 ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --           ; --                  ;
+; TOP_LEVEL_ENTITY                     ; Controladora                           ; smart_cart    ; --           ; --                  ;
++--------------------------------------+----------------------------------------+---------------+--------------+---------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -130,12 +130,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4794 MB             ; 00:00:30                           ;
-; Fitter               ; 00:00:10     ; 1.0                     ; 5501 MB             ; 00:00:10                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4679 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4772 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4637 MB             ; 00:00:01                           ;
-; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:44                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4794 MB             ; 00:00:27                           ;
+; Fitter               ; 00:00:04     ; 1.0                     ; 5493 MB             ; 00:00:05                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 4678 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4779 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4638 MB             ; 00:00:01                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:36                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -20,7 +20,7 @@ end comparador_saldo;
 architecture comparador_saldo of comparador_saldo is
 
 begin
-	with (valor_total < saldo_cartao) select
+	with (valor_total > saldo_cartao) select
 
 	saldo_lt_total <=  '1' when true,
 						 '0' when others;
