@@ -8,41 +8,41 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/projeto/simulation/modelsim
-Etb_total_reg
-Z1 w1657757886
-Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Ecomparador_itens
+Z1 w1657729088
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z7 8C:/projeto/tb_total_reg.vhd
-Z8 FC:/projeto/tb_total_reg.vhd
+Z7 8C:/projeto/comparador_itens.vhd
+Z8 FC:/projeto/comparador_itens.vhd
 l0
-L6
-VW97N=O2dk3lSDa:Q2E]a[0
-!s100 `Vod=mTXeJbIj6^6:j@HX0
+L8
+VSDB>Z9BKUO8TCQn@NCU6h3
+!s100 :3PdDM2EHd>27d6nidF0]1
 Z9 OV;C;10.5b;63
 31
-Z10 !s110 1657757926
+Z10 !s110 1657844965
 !i10b 1
-Z11 !s108 1657757926.000000
-Z12 !s90 -reportprogress|300|-93|-work|work|C:/projeto/tb_total_reg.vhd|
-Z13 !s107 C:/projeto/tb_total_reg.vhd|
+Z11 !s108 1657844965.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/projeto/comparador_itens.vhd|
+Z13 !s107 C:/projeto/comparador_itens.vhd|
 !i113 1
 Z14 o-93 -work work
 Z15 tExplicit 1 CvgOpt 0
-Ateste
+Acomparador_itens
 R2
 R3
 R4
 R5
 R6
-DEx4 work 12 tb_total_reg 0 22 W97N=O2dk3lSDa:Q2E]a[0
+DEx4 work 16 comparador_itens 0 22 SDB>Z9BKUO8TCQn@NCU6h3
 l22
-L9
-VRb^3dbEOb<oY@=ccAEYTO3
-!s100 cizaPN_gW66dUaU?DQ:R:3
+L20
+V]15Z8Xe<QMcJZN9n]7e;`0
+!s100 <5BE]zA>0aNo[mR?eF`4c3
 R9
 31
 R10
@@ -53,14 +53,475 @@ R13
 !i113 1
 R14
 R15
-Etotal_reg
-Z16 w1657661689
+Ecomparador_saldo
+Z16 w1657752018
+R2
+R3
 R4
 R5
 R6
 R0
-Z17 8C:/projeto/total_reg.vhd
-Z18 FC:/projeto/total_reg.vhd
+Z17 8C:/projeto/comparador_saldo.vhd
+Z18 FC:/projeto/comparador_saldo.vhd
+l0
+L8
+VWkjYWO=D;e`e]4C4HY[2B1
+!s100 =l<QDf6:<6ECC3fencjQC2
+R9
+31
+R10
+!i10b 1
+R11
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/projeto/comparador_saldo.vhd|
+Z20 !s107 C:/projeto/comparador_saldo.vhd|
+!i113 1
+R14
+R15
+Acomparador_saldo
+R2
+R3
+R4
+R5
+R6
+DEx4 work 16 comparador_saldo 0 22 WkjYWO=D;e`e]4C4HY[2B1
+l22
+L20
+VDKeIG?SfGXK?meVnk;EkI1
+!s100 TVDR3nVb<EL`@615PB@1@2
+R9
+31
+R10
+!i10b 1
+R11
+R19
+R20
+!i113 1
+R14
+R15
+Econtroladora
+Z21 w1657843470
+R2
+R5
+R6
+R0
+Z22 8C:/projeto/Controladora.vhd
+Z23 FC:/projeto/Controladora.vhd
+l0
+L5
+VQgk:NV@cWVPCPVhC6nXR>1
+!s100 [B`;MFWL0odR@CJb9mjTN0
+R9
+31
+Z24 !s110 1657844966
+!i10b 1
+R11
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/projeto/Controladora.vhd|
+Z26 !s107 C:/projeto/Controladora.vhd|
+!i113 1
+R14
+R15
+Artlcontroladora
+R2
+R5
+R6
+DEx4 work 12 controladora 0 22 Qgk:NV@cWVPCPVhC6nXR>1
+l69
+L38
+VO7n?RSCAICgV_[dPZ>4]S0
+!s100 hk22ogB]ZX?Z^lM?P0QU_2
+R9
+31
+R24
+!i10b 1
+R11
+R25
+R26
+!i113 1
+R14
+R15
+Edatapath
+Z27 w1657825059
+R5
+R6
+R0
+Z28 8C:/projeto/DataPath.vhd
+Z29 FC:/projeto/DataPath.vhd
+l0
+L4
+VCzo?W;=N]I^zUX=e`F[Pg3
+!s100 jLHR`mf`M;e[LjoU=jKNM0
+R9
+31
+R10
+!i10b 1
+R11
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/projeto/DataPath.vhd|
+Z31 !s107 C:/projeto/DataPath.vhd|
+!i113 1
+R14
+R15
+Artldatapath
+R5
+R6
+DEx4 work 8 datapath 0 22 Czo?W;=N]I^zUX=e`F[Pg3
+l107
+L31
+Vj_f^0CcV=VImez6;[WKUL1
+!s100 o5fk3hA>lkh;ghChhLQ<@1
+R9
+31
+R10
+!i10b 1
+R11
+R30
+R31
+!i113 1
+R14
+R15
+Edecrementador
+Z32 w1657664540
+R4
+R3
+R5
+R6
+R0
+Z33 8C:/projeto/decrementador.vhd
+Z34 FC:/projeto/decrementador.vhd
+l0
+L5
+VJ39V5;XzElY017W9PbheC3
+!s100 8VGM9]f;8eVH`JP[XH5W51
+R9
+31
+R10
+!i10b 1
+R11
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/projeto/decrementador.vhd|
+Z36 !s107 C:/projeto/decrementador.vhd|
+!i113 1
+R14
+R15
+Adecrementador
+R4
+R3
+R5
+R6
+DEx4 work 13 decrementador 0 22 J39V5;XzElY017W9PbheC3
+l17
+L15
+V:92;mfjmbXZH^]i@H@7IE0
+!s100 ^Z?2[a_Dc;GM@@2S8ma>>0
+R9
+31
+R10
+!i10b 1
+R11
+R35
+R36
+!i113 1
+R14
+R15
+Eincrementador
+Z37 w1657664442
+R4
+R3
+R5
+R6
+R0
+Z38 8C:/projeto/incrementador.vhd
+Z39 FC:/projeto/incrementador.vhd
+l0
+L5
+V2daRbB[7<`38MD;]=Eo4>1
+!s100 Y^_kfo]<FK;O[X=ZPPemX2
+R9
+31
+R10
+!i10b 1
+R11
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/projeto/incrementador.vhd|
+Z41 !s107 C:/projeto/incrementador.vhd|
+!i113 1
+R14
+R15
+Aincrementador
+R4
+R3
+R5
+R6
+DEx4 work 13 incrementador 0 22 2daRbB[7<`38MD;]=Eo4>1
+l17
+L15
+VDL1hi04Y75iQeb;MacXNn1
+!s100 zGjRFEfG5S@5UYj238Y4^0
+R9
+31
+R10
+!i10b 1
+R11
+R40
+R41
+!i113 1
+R14
+R15
+Emux_4_1
+Z42 w1657796044
+R5
+R6
+R0
+Z43 8C:/projeto/mux_4_1.vhd
+Z44 FC:/projeto/mux_4_1.vhd
+l0
+L4
+VEiaHUicMjS]Q2OUPbnT2B2
+!s100 hPg8l@PTzog@6;UiZEWMf2
+R9
+31
+Z45 !s110 1657844964
+!i10b 1
+Z46 !s108 1657844964.000000
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/projeto/mux_4_1.vhd|
+Z48 !s107 C:/projeto/mux_4_1.vhd|
+!i113 1
+R14
+R15
+Amux_4_1
+R5
+R6
+DEx4 work 7 mux_4_1 0 22 EiaHUicMjS]Q2OUPbnT2B2
+l15
+L14
+Vh3EBNI9[M6i`>=gmOLK5U3
+!s100 z?31b0I^Zj5_`mXemZ2^S2
+R9
+31
+R45
+!i10b 1
+R46
+R47
+R48
+!i113 1
+R14
+R15
+Esmart_cart
+Z49 w1657795376
+R5
+R6
+R0
+Z50 8C:/projeto/smart_cart.vhd
+Z51 FC:/projeto/smart_cart.vhd
+l0
+L4
+V6>^]TZN92DJcN^4AQiPUF1
+!s100 2b25M42zPgCL5:NF:eX1R0
+R9
+31
+R24
+!i10b 1
+Z52 !s108 1657844966.000000
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/projeto/smart_cart.vhd|
+Z54 !s107 C:/projeto/smart_cart.vhd|
+!i113 1
+R14
+R15
+Artlsmart_cart
+R5
+R6
+DEx4 work 10 smart_cart 0 22 6>^]TZN92DJcN^4AQiPUF1
+l105
+L35
+VOlVg<:6nYB`05878lo5Xh3
+!s100 MbXfTQR0_iM0lZB:0`0ca2
+R9
+31
+R24
+!i10b 1
+R52
+R53
+R54
+!i113 1
+R14
+R15
+Esomador
+Z55 w1657659599
+R4
+R3
+R5
+R6
+R0
+Z56 8C:/projeto/somador.vhd
+Z57 FC:/projeto/somador.vhd
+l0
+L5
+V>VB]LB91Jbo5;Ef[_oeZn2
+!s100 oYiPO6WeT8;@fBJMRFZ5E3
+R9
+31
+R45
+!i10b 1
+R46
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/projeto/somador.vhd|
+Z59 !s107 C:/projeto/somador.vhd|
+!i113 1
+R14
+R15
+Asomador
+R4
+R3
+R5
+R6
+DEx4 work 7 somador 0 22 >VB]LB91Jbo5;Ef[_oeZn2
+l13
+L12
+VkMLEOf68<89Km6f2ZSI681
+!s100 gM@fSonJ6RIgmD@ZT9U3X0
+R9
+31
+R45
+!i10b 1
+R46
+R58
+R59
+!i113 1
+R14
+R15
+Esubtrator
+Z60 w1657659608
+R4
+R3
+R5
+R6
+R0
+Z61 8C:/projeto/subtrator.vhd
+Z62 FC:/projeto/subtrator.vhd
+l0
+L5
+V9dPBJSGV1geZA9iIhI0g50
+!s100 ]9e>h`7S481OB5hmUUP?f0
+R9
+31
+R45
+!i10b 1
+R46
+Z63 !s90 -reportprogress|300|-93|-work|work|C:/projeto/subtrator.vhd|
+Z64 !s107 C:/projeto/subtrator.vhd|
+!i113 1
+R14
+R15
+Asubtrator
+R4
+R3
+R5
+R6
+DEx4 work 9 subtrator 0 22 9dPBJSGV1geZA9iIhI0g50
+l13
+L12
+Vgf^jENlZ8@7zW`7HcVa[c1
+!s100 fag19M`8oZR7L?1Bf1K?H1
+R9
+31
+R45
+!i10b 1
+R46
+R63
+R64
+!i113 1
+R14
+R15
+Etb_smart_cart
+Z65 w1657844720
+R4
+R3
+R2
+R5
+R6
+R0
+Z66 8C:/projeto/tb_smart_cart.vhd
+Z67 FC:/projeto/tb_smart_cart.vhd
+l0
+L6
+VF8:N:5HIDZ?^FQc>2LbYW2
+!s100 ?H^N5hd0`VR@z3Mg3R_CU2
+R9
+31
+R24
+!i10b 1
+R52
+Z68 !s90 -reportprogress|300|-93|-work|work|C:/projeto/tb_smart_cart.vhd|
+Z69 !s107 C:/projeto/tb_smart_cart.vhd|
+!i113 1
+R14
+R15
+Ateste
+R4
+R3
+R2
+R5
+R6
+DEx4 work 13 tb_smart_cart 0 22 F8:N:5HIDZ?^FQc>2LbYW2
+l51
+L9
+VkmT^@11RC?9j^;D6<T5R@1
+!s100 ae^Y=0GRARAkVVk_<AA6>0
+R9
+31
+R24
+!i10b 1
+R52
+R68
+R69
+!i113 1
+R14
+R15
+Etotal_itens_reg
+Z70 w1657662401
+R2
+R5
+R6
+R0
+Z71 8C:/projeto/total_itens_reg.vhd
+Z72 FC:/projeto/total_itens_reg.vhd
+l0
+L5
+VNAm=If:E^M@=K1S>di?G81
+!s100 1o4S74@=>`82S74azQ>zL3
+R9
+31
+R10
+!i10b 1
+R46
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/projeto/total_itens_reg.vhd|
+Z74 !s107 C:/projeto/total_itens_reg.vhd|
+!i113 1
+R14
+R15
+Atotal_itens_reg
+R2
+R5
+R6
+DEx4 work 15 total_itens_reg 0 22 NAm=If:E^M@=K1S>di?G81
+l18
+L17
+Vo<KM2f4;Ej7E4[ETO71J_2
+!s100 [8>MR;V`>YWcDea1WgaGQ2
+R9
+31
+R10
+!i10b 1
+R46
+R73
+R74
+!i113 1
+R14
+R15
+Etotal_reg
+Z75 w1657661689
+R2
+R5
+R6
+R0
+Z76 8C:/projeto/total_reg.vhd
+Z77 FC:/projeto/total_reg.vhd
 l0
 L5
 VG_oCkl:C<6[YHT;aGjB6[0
@@ -69,14 +530,14 @@ R9
 31
 R10
 !i10b 1
-Z19 !s108 1657757925.000000
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/projeto/total_reg.vhd|
-Z21 !s107 C:/projeto/total_reg.vhd|
+R11
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/projeto/total_reg.vhd|
+Z79 !s107 C:/projeto/total_reg.vhd|
 !i113 1
 R14
 R15
 Atotal_reg
-R4
+R2
 R5
 R6
 DEx4 work 9 total_reg 0 22 G_oCkl:C<6[YHT;aGjB6[0
@@ -88,9 +549,9 @@ R9
 31
 R10
 !i10b 1
-R19
-R20
-R21
+R11
+R78
+R79
 !i113 1
 R14
 R15

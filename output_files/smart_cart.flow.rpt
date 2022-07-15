@@ -1,5 +1,5 @@
 Flow report for smart_cart
-Thu Jul 14 07:44:56 2022
+Thu Jul 14 21:29:04 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Jul 14 07:44:56 2022       ;
+; Flow Status                        ; Successful - Thu Jul 14 21:29:04 2022       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; smart_cart                                  ;
 ; Top-level Entity Name              ; smart_cart                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 155 / 6,272 ( 2 % )                         ;
-;     Total combinational functions  ; 155 / 6,272 ( 2 % )                         ;
-;     Dedicated logic registers      ; 49 / 6,272 ( < 1 % )                        ;
-; Total registers                    ; 49                                          ;
+; Total logic elements               ; 162 / 6,272 ( 3 % )                         ;
+;     Total combinational functions  ; 160 / 6,272 ( 3 % )                         ;
+;     Dedicated logic registers      ; 56 / 6,272 ( < 1 % )                        ;
+; Total registers                    ; 56                                          ;
 ; Total pins                         ; 148 / 180 ( 82 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/14/2022 07:44:04 ;
+; Start date & time ; 07/14/2022 21:28:21 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; smart_cart          ;
 +-------------------+---------------------+
@@ -76,10 +76,11 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+---------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id          ;
 +--------------------------------------+----------------------------------------+---------------+-------------+---------------------+
-; COMPILER_SIGNATURE_ID                ; 167381581466605.165779544406732        ; --            ; --          ; --                  ;
+; COMPILER_SIGNATURE_ID                ; 167381581466604.165784490109848        ; --            ; --          ; --                  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_comparador_itens ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_decrementador    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_somador          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_smart_cart       ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_subtrator        ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_comparador_saldo ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_total_itens_reg  ;
@@ -93,6 +94,7 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TEST_BENCH_FILE                  ; tb_comparador_itens.vhd                ; --            ; --          ; tb_comparador_itens ;
 ; EDA_TEST_BENCH_FILE                  ; tb_decrementador.vhd                   ; --            ; --          ; tb_decrementador    ;
 ; EDA_TEST_BENCH_FILE                  ; tb_somador.vhd                         ; --            ; --          ; tb_somador          ;
+; EDA_TEST_BENCH_FILE                  ; tb_smart_cart.vhd                      ; --            ; --          ; tb_smart_cart       ;
 ; EDA_TEST_BENCH_FILE                  ; tb_subtrator.vhd                       ; --            ; --          ; tb_subtrator        ;
 ; EDA_TEST_BENCH_FILE                  ; tb_comparador_saldo.vhd                ; --            ; --          ; tb_comparador_saldo ;
 ; EDA_TEST_BENCH_FILE                  ; tb_total_itens_reg.vhd                 ; --            ; --          ; tb_total_itens_reg  ;
@@ -102,6 +104,7 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_comparador_itens                    ; --            ; --          ; tb_comparador_itens ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_decrementador                       ; --            ; --          ; tb_decrementador    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_somador                             ; --            ; --          ; tb_somador          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_smart_cart                          ; --            ; --          ; tb_smart_cart       ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_subtrator                           ; --            ; --          ; tb_subtrator        ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_comparador_saldo                    ; --            ; --          ; tb_comparador_saldo ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; tb_total_itens_reg                     ; --            ; --          ; tb_total_itens_reg  ;
@@ -117,6 +120,7 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TEST_BENCH_NAME                  ; tb_comparador_saldo                    ; --            ; --          ; eda_simulation      ;
 ; EDA_TEST_BENCH_NAME                  ; tb_decrementador                       ; --            ; --          ; eda_simulation      ;
 ; EDA_TEST_BENCH_NAME                  ; tb_total_reg                           ; --            ; --          ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; tb_smart_cart                          ; --            ; --          ; eda_simulation      ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --          ; tb_comparador_itens ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --          ; tb_decrementador    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                 ; --            ; --          ; tb_somador          ;
@@ -139,12 +143,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4792 MB             ; 00:00:26                           ;
-; Fitter               ; 00:00:20     ; 1.0                     ; 5500 MB             ; 00:00:12                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4679 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4774 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4637 MB             ; 00:00:01                           ;
-; Total                ; 00:00:45     ; --                      ; --                  ; 00:00:42                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4794 MB             ; 00:00:37                           ;
+; Fitter               ; 00:00:17     ; 1.0                     ; 5502 MB             ; 00:00:20                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4681 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4773 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
+; Total                ; 00:00:38     ; --                      ; --                  ; 00:01:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -13,7 +13,7 @@ END mux_4_1;
 
 ARCHITECTURE mux_4_1 OF mux_4_1 IS
 BEGIN
-	mux1 : process (s0, s1)
+	mux1 : process (s0, s1, in0, in1, in2, in3)
 		BEGIN
 		if (s0 = '0' and s1 = '0') then
 			out1 <= in0;

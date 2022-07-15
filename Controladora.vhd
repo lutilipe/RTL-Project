@@ -53,14 +53,18 @@ type estado is (
 signal estado_atual : estado := inicio;
 signal proximo_estado : estado := inicio;
 
--------------------------------------------------
---          Auxiliares para os botoes
--- identificar se o botao foi pressionado e solto
--------------------------------------------------
+----------------------------------------------
+--  Auxiliares para os botoes/acionadores   --
+----------------------------------------------
 signal aux_inicia_compra : std_logic := '0';
 signal aux_finaliza_compra : std_logic := '0';
 signal aux_cancelar : std_logic := '0';
 signal aux_pagar_compra : std_logic := '0';
+signal aux_cartao_lido : std_logic := '0';
+
+signal aux_add : std_logic := '0';
+signal aux_del : std_logic := '0';
+----------------------------------------------
 
 begin
 
@@ -77,10 +81,20 @@ begin
 			aux_finaliza_compra <= finaliza_compra;
 			aux_cancelar <= cancelar;
 			aux_pagar_compra <= pagar_compra;
+			aux_add <= add;
+			aux_del <= del;
+			aux_cartao_lido <= cartao_lido;
 		end if;
 	end process;
 	
 	process (
+		aux_inicia_compra,
+		aux_finaliza_compra,
+		aux_cancelar,
+		aux_pagar_compra,
+		aux_cartao_lido,
+		aux_add,
+		aux_del,
 		inicia_compra,
 		finaliza_compra,
 		cancelar,
@@ -114,7 +128,7 @@ begin
 			ld_total_itens <= '0';
 			ld_total <= '0';
 			erro <= '0';
-			if (inicia_compra = '1') then
+			if (inicia_compra = '1' and aux_inicia_compra = '0') then
 				proximo_estado <= edicao_da_compra;
 			else
 				proximo_estado <= inicio;
@@ -127,11 +141,11 @@ begin
 			ld_total <= '0';
 			erro <= '0';
 
-			if (add = '1') then
+			if (add = '1' and aux_add = '0') then
 				proximo_estado <= confere_adicao;
-			elsif (del = '1') then
+			elsif (del = '1' and aux_del = '0') then
 				proximo_estado <= remove;
-			elsif (finaliza_compra = '1') then
+			elsif (finaliza_compra = '1' and aux_finaliza_compra = '0') then
 				proximo_estado <= confirma;
 			else
 				proximo_estado <= edicao_da_compra;
@@ -159,13 +173,13 @@ begin
 			proximo_estado <= edicao_da_compra;
 		
 		when confirma =>
-			if (add = '1') then
+			if (add = '1' and aux_add = '0') then
 				proximo_estado <= confere_adicao;
-			elsif (del = '1') then
+			elsif (del = '1' and aux_del = '0') then
 				proximo_estado <= remove;
-			elsif (cancelar = '1') then
+			elsif (cancelar = '1' and aux_cancelar = '0') then
 				proximo_estado <= edicao_da_compra;
-			elsif (pagar_compra = '1') then
+			elsif (pagar_compra = '1' and aux_pagar_compra = '0') then
 				proximo_estado <= pagar;
 			else
 				proximo_estado <= confirma;
@@ -173,13 +187,13 @@ begin
 		
 		when pagar =>
 			ler_pagamento <= '1';
-			if (add = '1') then
+			if (add = '1' and aux_add = '0') then
 				proximo_estado <= confere_adicao;
-			elsif (del = '1') then
+			elsif (del = '1' and aux_del = '0') then
 				proximo_estado <= remove;
-			elsif (cancelar = '1') then
+			elsif (cancelar = '1' and aux_cancelar = '0') then
 				proximo_estado <= edicao_da_compra;
-			elsif (cartao_lido = '1') then
+			elsif (cartao_lido = '1' and aux_cartao_lido = '0') then
 				proximo_estado <= verifica_saldo;
 			else
 				proximo_estado <= pagar;

@@ -1,14 +1,14 @@
-Fitter Status : Successful - Thu Jul 14 07:44:43 2022
+Fitter Status : Successful - Thu Jul 14 21:28:54 2022
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : smart_cart
 Top-level Entity Name : smart_cart
 Family : Cyclone IV E
 Device : EP4CE6F17C6
 Timing Models : Final
-Total logic elements : 155 / 6,272 ( 2 % )
-    Total combinational functions : 155 / 6,272 ( 2 % )
-    Dedicated logic registers : 49 / 6,272 ( < 1 % )
-Total registers : 49
+Total logic elements : 162 / 6,272 ( 3 % )
+    Total combinational functions : 160 / 6,272 ( 3 % )
+    Dedicated logic registers : 56 / 6,272 ( < 1 % )
+Total registers : 56
 Total pins : 148 / 180 ( 82 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )

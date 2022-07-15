@@ -50,7 +50,7 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_total_reg -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_smart_cart -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME tb_somador -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_somador
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_somador -section_id tb_somador
@@ -101,6 +101,19 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_decrement
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 ns" -section_id tb_decrementador
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_decrementador -section_id tb_decrementador
 set_global_assignment -name VHDL_FILE tb_total_reg.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_total_reg -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_total_reg
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 ns" -section_id tb_total_reg
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_total_reg -section_id tb_total_reg
+set_global_assignment -name VHDL_FILE smart_cart.vhd
+set_global_assignment -name VHDL_FILE tb_smart_cart.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_smart_cart -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_smart_cart
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_smart_cart -section_id tb_smart_cart
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_somador.vhd -section_id tb_somador
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_subtrator.vhd -section_id tb_subtrator
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_mux_4_1.vhd -section_id tb_mux_4_1
@@ -109,13 +122,5 @@ set_global_assignment -name EDA_TEST_BENCH_FILE tb_incrementador.vhd -section_id
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_comparador_itens.vhd -section_id tb_comparador_itens
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_comparador_saldo.vhd -section_id tb_comparador_saldo
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_decrementador.vhd -section_id tb_decrementador
-set_global_assignment -name EDA_TEST_BENCH_NAME tb_total_reg -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_total_reg
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 ns" -section_id tb_total_reg
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_total_reg -section_id tb_total_reg
 set_global_assignment -name EDA_TEST_BENCH_FILE tb_total_reg.vhd -section_id tb_total_reg
-set_global_assignment -name VHDL_FILE smart_cart.vhd
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_FILE tb_smart_cart.vhd -section_id tb_smart_cart
