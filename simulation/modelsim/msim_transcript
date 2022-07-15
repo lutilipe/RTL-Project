@@ -10,168 +10,45 @@
 # Copying D:/intel/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/projeto/somador.vhd}
+# vcom -93 -work work {C:/projeto/Controladora.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:01 on Jul 15,2022
-# vcom -reportprogress 300 -93 -work work C:/projeto/somador.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity somador
-# -- Compiling architecture somador of somador
-# End time: 16:05:01 on Jul 15,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/projeto/subtrator.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:01 on Jul 15,2022
-# vcom -reportprogress 300 -93 -work work C:/projeto/subtrator.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity subtrator
-# -- Compiling architecture subtrator of subtrator
-# End time: 16:05:01 on Jul 15,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/projeto/mux_4_1.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:01 on Jul 15,2022
-# vcom -reportprogress 300 -93 -work work C:/projeto/mux_4_1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux_4_1
-# -- Compiling architecture mux_4_1 of mux_4_1
-# End time: 16:05:02 on Jul 15,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/projeto/total_itens_reg.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:02 on Jul 15,2022
-# vcom -reportprogress 300 -93 -work work C:/projeto/total_itens_reg.vhd 
+# Start time: 17:40:09 on Jul 15,2022
+# vcom -reportprogress 300 -93 -work work C:/projeto/Controladora.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity total_itens_reg
-# -- Compiling architecture total_itens_reg of total_itens_reg
-# End time: 16:05:02 on Jul 15,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/projeto/total_reg.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:02 on Jul 15,2022
-# vcom -reportprogress 300 -93 -work work C:/projeto/total_reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity total_reg
-# -- Compiling architecture total_reg of total_reg
-# End time: 16:05:02 on Jul 15,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/projeto/incrementador.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:02 on Jul 15,2022
-# vcom -reportprogress 300 -93 -work work C:/projeto/incrementador.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity incrementador
-# -- Compiling architecture incrementador of incrementador
-# End time: 16:05:02 on Jul 15,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/projeto/decrementador.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:02 on Jul 15,2022
-# vcom -reportprogress 300 -93 -work work C:/projeto/decrementador.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity decrementador
-# -- Compiling architecture decrementador of decrementador
-# End time: 16:05:02 on Jul 15,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/projeto/comparador_itens.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:02 on Jul 15,2022
-# vcom -reportprogress 300 -93 -work work C:/projeto/comparador_itens.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity comparador_itens
-# -- Compiling architecture comparador_itens of comparador_itens
-# End time: 16:05:02 on Jul 15,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/projeto/comparador_saldo.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:02 on Jul 15,2022
-# vcom -reportprogress 300 -93 -work work C:/projeto/comparador_saldo.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package NUMERIC_STD
-# -- Compiling entity comparador_saldo
-# -- Compiling architecture comparador_saldo of comparador_saldo
-# End time: 16:05:02 on Jul 15,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/projeto/DataPath.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:02 on Jul 15,2022
-# vcom -reportprogress 300 -93 -work work C:/projeto/DataPath.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity DataPath
-# -- Compiling architecture RTLDataPath of DataPath
-# End time: 16:05:02 on Jul 15,2022, Elapsed time: 0:00:00
+# -- Compiling entity Controladora
+# -- Compiling architecture RTLControladora of Controladora
+# End time: 17:40:09 on Jul 15,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/projeto/tb_DataPath.vhd}
+# vcom -93 -work work {C:/projeto/tb_Controladora.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:05:02 on Jul 15,2022
-# vcom -reportprogress 300 -93 -work work C:/projeto/tb_DataPath.vhd 
+# Start time: 17:40:09 on Jul 15,2022
+# vcom -reportprogress 300 -93 -work work C:/projeto/tb_Controladora.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity tb_DataPath
-# -- Compiling architecture teste of tb_DataPath
-# End time: 16:05:02 on Jul 15,2022, Elapsed time: 0:00:00
+# -- Compiling entity tb_Controladora
+# -- Compiling architecture teste of tb_Controladora
+# End time: 17:40:09 on Jul 15,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb_DataPath
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" tb_DataPath 
-# Start time: 16:05:02 on Jul 15,2022
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb_Controladora
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" tb_Controladora 
+# Start time: 17:40:09 on Jul 15,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.tb_datapath(teste)
-# Loading work.datapath(rtldatapath)
-# Loading work.somador(somador)
-# Loading work.subtrator(subtrator)
-# Loading work.mux_4_1(mux_4_1)
-# Loading work.total_reg(total_reg)
-# Loading work.comparador_saldo(comparador_saldo)
-# Loading work.incrementador(incrementador)
-# Loading work.decrementador(decrementador)
-# Loading work.total_itens_reg(total_itens_reg)
-# Loading work.comparador_itens(comparador_itens)
+# Loading work.tb_controladora(teste)
+# Loading work.controladora(rtlcontroladora)
 # 
 # add wave *
 # view structure
@@ -179,13 +56,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 200 ns
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapath/instancia_DataPath/F_Comparador_Saldo
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapath/instancia_DataPath/E_Subtrator_2
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapath/instancia_DataPath/B_Subtrator_1
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapath/instancia_DataPath/A_Somador
-# End time: 16:05:46 on Jul 15,2022, Elapsed time: 0:00:44
-# Errors: 0, Warnings: 4
+# End time: 17:41:49 on Jul 15,2022, Elapsed time: 0:01:40
+# Errors: 0, Warnings: 0

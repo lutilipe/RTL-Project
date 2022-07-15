@@ -1,0 +1,153 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/projeto/simulation/modelsim
+Econtroladora
+Z1 w1657913554
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 JX^YokbeM8:bL?Pj@;1Jd1
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 Lf2433zWNi5^RHNT=BHD60
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 dbC[kT^o8P[ggjb1if:RT1
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 PoC3B_7fao?IDTS[NR5Q62
+R0
+Z10 8smart_cart.vho
+Z11 Fsmart_cart.vho
+l0
+L80
+VKfJ^WZ=TiTfV4TUEHKlDO0
+!s100 lR4cS[EMTAMJLHojXV4od3
+Z12 OV;C;10.5b;63
+31
+Z13 !s110 1657914864
+!i10b 1
+Z14 !s108 1657914863.000000
+Z15 !s90 -reportprogress|300|-93|-work|work|smart_cart.vho|
+Z16 !s107 smart_cart.vho|
+!i113 1
+Z17 o-93 -work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 12 controladora 0 22 KfJ^WZ=TiTfV4TUEHKlDO0
+l237
+L130
+VE:4iFRVmJ4ZNJYEo=;SU13
+!s100 2f=LgBI@iVB9Ed]ETo5;O2
+R12
+31
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Ehard_block
+R1
+R4
+R2
+R6
+R7
+R8
+R3
+R0
+R10
+R11
+l0
+L35
+Vi9a_SfXm?YhLI2dhm1j^51
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R12
+31
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 10 hard_block 0 22 i9a_SfXm?YhLI2dhm1j^51
+l65
+L51
+VWdBQm4eNm6eGHO;iQNz`j1
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R12
+31
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Etb_controladora
+Z19 w1657913516
+Z20 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z21 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z22 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R7
+R8
+R0
+Z23 8C:/projeto/tb_Controladora.vhd
+Z24 FC:/projeto/tb_Controladora.vhd
+l0
+L6
+V<TEnT>Q9A@2kDJ0=9f8LJ2
+!s100 D66]GD;426LMfke<N40@M1
+R12
+31
+R13
+!i10b 1
+Z25 !s108 1657914864.000000
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/projeto/tb_Controladora.vhd|
+Z27 !s107 C:/projeto/tb_Controladora.vhd|
+!i113 1
+R17
+R18
+Ateste
+R20
+R21
+R22
+R7
+R8
+DEx4 work 15 tb_controladora 0 22 <TEnT>Q9A@2kDJ0=9f8LJ2
+l52
+L9
+Vi7Y;CM7;MI:eDJ[>?F4zW3
+!s100 d0j5Gb<bEeZgfzJ2HU=PB0
+R12
+31
+R13
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R17
+R18

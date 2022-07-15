@@ -73,7 +73,7 @@ begin
 
 	-- REGISTRADOR DE ESTADOS --
 	
-	process(clear, clock) is	
+	process(clear, clock, add) is	
 	begin
 		if(clear = '1') then
 			estado_atual <= inicio;
