@@ -85,12 +85,60 @@ begin
 	begin
 		clear <= '0';
 		
-		saldo_cartao <= std_logic_vector(to_unsigned(100, 32)); wait;
-		valor_produto <= std_logic_vector(to_unsigned(30, 32)); wait;
+		saldo_cartao <= std_logic_vector(to_unsigned(100, 32));
+		valor_produto <= std_logic_vector(to_unsigned(0, 32));
 
-		inicia_compra <= '0';
+		inicia_compra <= '1';
+		finaliza_compra <= '0';
 		cancelar <= '0';
+		pagar_compra <= '0';
+		cartao_lido <= '0';
+		clear <= '0';
+		add <= '0';
+		del <= '0';
+		wait for 40 ns;
 		
+		inicia_compra <= '0';
+		wait for 1 ns;
+		
+		add <= '1';
+		valor_produto <= std_logic_vector(to_unsigned(32, 32));
+		wait for 50 ns;
+		
+		add <= '0';
+		wait for 50 ns;
+		
+		add <= '1';
+		valor_produto <= std_logic_vector(to_unsigned(20, 32));
+		wait for 50 ns;
+		
+		add <= '0';
+		wait for 50 ns;
+		
+		del <= '1';
+		valor_produto <= std_logic_vector(to_unsigned(32, 32));
+		wait for 50 ns;
+		
+		del <= '0';
+		wait for 50 ns;
+		
+		finaliza_compra <= '1';
+		wait for 50 ns;
+		
+		finaliza_compra <= '0';
+		wait for 50 ns;
+		
+		pagar_compra <= '1';
+		wait for 50 ns;
+		
+		pagar_compra <= '0';
+		wait for 50 ns;
+		
+		cartao_lido <= '1';
+		wait for 50 ns;
+		
+		cartao_lido <= '0';
+		wait;
 		
 	end process;
 

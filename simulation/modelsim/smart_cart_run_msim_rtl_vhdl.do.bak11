@@ -18,9 +18,9 @@ vcom -93 -work work {C:/projeto/DataPath.vhd}
 vcom -93 -work work {C:/projeto/Controladora.vhd}
 vcom -93 -work work {C:/projeto/smart_cart.vhd}
 
-vcom -93 -work work {C:/projeto/tb_Controladora.vhd}
+vcom -93 -work work {C:/projeto/tb_smart_cart.vhd}
 
-vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb_Controladora
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  tb_smart_cart
 
 add wave *
 view structure

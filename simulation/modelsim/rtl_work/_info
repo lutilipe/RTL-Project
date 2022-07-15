@@ -24,9 +24,9 @@ VSDB>Z9BKUO8TCQn@NCU6h3
 !s100 :3PdDM2EHd>27d6nidF0]1
 Z9 OV;C;10.5b;63
 31
-Z10 !s110 1657922155
+Z10 !s110 1657912977
 !i10b 1
-Z11 !s108 1657922154.000000
+Z11 !s108 1657912977.000000
 Z12 !s90 -reportprogress|300|-93|-work|work|C:/projeto/comparador_itens.vhd|
 Z13 !s107 C:/projeto/comparador_itens.vhd|
 !i113 1
@@ -71,9 +71,9 @@ R9
 31
 R10
 !i10b 1
-Z19 !s108 1657922155.000000
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/projeto/comparador_saldo.vhd|
-Z21 !s107 C:/projeto/comparador_saldo.vhd|
+R11
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/projeto/comparador_saldo.vhd|
+Z20 !s107 C:/projeto/comparador_saldo.vhd|
 !i113 1
 R14
 R15
@@ -92,20 +92,20 @@ R9
 31
 R10
 !i10b 1
+R11
 R19
 R20
-R21
 !i113 1
 R14
 R15
 Econtroladora
-Z22 w1657921363
+Z21 w1657921363
 R2
 R5
 R6
 R0
-Z23 8C:/projeto/Controladora.vhd
-Z24 FC:/projeto/Controladora.vhd
+Z22 8C:/projeto/Controladora.vhd
+Z23 FC:/projeto/Controladora.vhd
 l0
 L5
 VL6GDc_aJWDZX7P]U^ACA]2
@@ -114,9 +114,9 @@ R9
 31
 R10
 !i10b 1
-R19
-Z25 !s90 -reportprogress|300|-93|-work|work|C:/projeto/Controladora.vhd|
-Z26 !s107 C:/projeto/Controladora.vhd|
+R11
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/projeto/Controladora.vhd|
+Z25 !s107 C:/projeto/Controladora.vhd|
 !i113 1
 R14
 R15
@@ -133,19 +133,19 @@ R9
 31
 R10
 !i10b 1
-R19
+R11
+R24
 R25
-R26
 !i113 1
 R14
 R15
 Edatapath
-Z27 w1657910169
+Z26 w1657910169
 R5
 R6
 R0
-Z28 8C:/projeto/DataPath.vhd
-Z29 FC:/projeto/DataPath.vhd
+Z27 8C:/projeto/DataPath.vhd
+Z28 FC:/projeto/DataPath.vhd
 l0
 L4
 VidFF6GehDgE50z_VNT0:P0
@@ -154,9 +154,9 @@ R9
 31
 R10
 !i10b 1
-R19
-Z30 !s90 -reportprogress|300|-93|-work|work|C:/projeto/DataPath.vhd|
-Z31 !s107 C:/projeto/DataPath.vhd|
+R11
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/projeto/DataPath.vhd|
+Z30 !s107 C:/projeto/DataPath.vhd|
 !i113 1
 R14
 R15
@@ -172,32 +172,32 @@ R9
 31
 R10
 !i10b 1
-R19
+R11
+R29
 R30
-R31
 !i113 1
 R14
 R15
 Edecrementador
-Z32 w1657664540
+Z31 w1657664540
 R4
 R3
 R5
 R6
 R0
-Z33 8C:/projeto/decrementador.vhd
-Z34 FC:/projeto/decrementador.vhd
+Z32 8C:/projeto/decrementador.vhd
+Z33 FC:/projeto/decrementador.vhd
 l0
 L5
 VJ39V5;XzElY017W9PbheC3
 !s100 8VGM9]f;8eVH`JP[XH5W51
 R9
 31
-Z35 !s110 1657922154
+R10
 !i10b 1
 R11
-Z36 !s90 -reportprogress|300|-93|-work|work|C:/projeto/decrementador.vhd|
-Z37 !s107 C:/projeto/decrementador.vhd|
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/projeto/decrementador.vhd|
+Z35 !s107 C:/projeto/decrementador.vhd|
 !i113 1
 R14
 R15
@@ -213,34 +213,34 @@ V:92;mfjmbXZH^]i@H@7IE0
 !s100 ^Z?2[a_Dc;GM@@2S8ma>>0
 R9
 31
-R35
+R10
 !i10b 1
 R11
-R36
-R37
+R34
+R35
 !i113 1
 R14
 R15
 Eincrementador
-Z38 w1657664442
+Z36 w1657664442
 R4
 R3
 R5
 R6
 R0
-Z39 8C:/projeto/incrementador.vhd
-Z40 FC:/projeto/incrementador.vhd
+Z37 8C:/projeto/incrementador.vhd
+Z38 FC:/projeto/incrementador.vhd
 l0
 L5
 V2daRbB[7<`38MD;]=Eo4>1
 !s100 Y^_kfo]<FK;O[X=ZPPemX2
 R9
 31
-R35
+R10
 !i10b 1
 R11
-Z41 !s90 -reportprogress|300|-93|-work|work|C:/projeto/incrementador.vhd|
-Z42 !s107 C:/projeto/incrementador.vhd|
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/projeto/incrementador.vhd|
+Z40 !s107 C:/projeto/incrementador.vhd|
 !i113 1
 R14
 R15
@@ -256,32 +256,32 @@ VDL1hi04Y75iQeb;MacXNn1
 !s100 zGjRFEfG5S@5UYj238Y4^0
 R9
 31
-R35
+R10
 !i10b 1
 R11
-R41
-R42
+R39
+R40
 !i113 1
 R14
 R15
 Emux_4_1
-Z43 w1657796044
+Z41 w1657796044
 R5
 R6
 R0
-Z44 8C:/projeto/mux_4_1.vhd
-Z45 FC:/projeto/mux_4_1.vhd
+Z42 8C:/projeto/mux_4_1.vhd
+Z43 FC:/projeto/mux_4_1.vhd
 l0
 L4
 VEiaHUicMjS]Q2OUPbnT2B2
 !s100 hPg8l@PTzog@6;UiZEWMf2
 R9
 31
-R35
+R10
 !i10b 1
 R11
-Z46 !s90 -reportprogress|300|-93|-work|work|C:/projeto/mux_4_1.vhd|
-Z47 !s107 C:/projeto/mux_4_1.vhd|
+Z44 !s90 -reportprogress|300|-93|-work|work|C:/projeto/mux_4_1.vhd|
+Z45 !s107 C:/projeto/mux_4_1.vhd|
 !i113 1
 R14
 R15
@@ -295,21 +295,21 @@ Vh3EBNI9[M6i`>=gmOLK5U3
 !s100 z?31b0I^Zj5_`mXemZ2^S2
 R9
 31
-R35
+R10
 !i10b 1
 R11
-R46
-R47
+R44
+R45
 !i113 1
 R14
 R15
 Esmart_cart
-Z48 w1657855859
+Z46 w1657855859
 R5
 R6
 R0
-Z49 8C:/projeto/smart_cart.vhd
-Z50 FC:/projeto/smart_cart.vhd
+Z47 8C:/projeto/smart_cart.vhd
+Z48 FC:/projeto/smart_cart.vhd
 l0
 L4
 V6>^]TZN92DJcN^4AQiPUF1
@@ -318,9 +318,9 @@ R9
 31
 R10
 !i10b 1
-R19
-Z51 !s90 -reportprogress|300|-93|-work|work|C:/projeto/smart_cart.vhd|
-Z52 !s107 C:/projeto/smart_cart.vhd|
+R11
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/projeto/smart_cart.vhd|
+Z50 !s107 C:/projeto/smart_cart.vhd|
 !i113 1
 R14
 R15
@@ -336,32 +336,32 @@ R9
 31
 R10
 !i10b 1
-R19
-R51
-R52
+R11
+R49
+R50
 !i113 1
 R14
 R15
 Esomador
-Z53 w1657659599
+Z51 w1657659599
 R4
 R3
 R5
 R6
 R0
-Z54 8C:/projeto/somador.vhd
-Z55 FC:/projeto/somador.vhd
+Z52 8C:/projeto/somador.vhd
+Z53 FC:/projeto/somador.vhd
 l0
 L5
 V>VB]LB91Jbo5;Ef[_oeZn2
 !s100 oYiPO6WeT8;@fBJMRFZ5E3
 R9
 31
-R35
+R10
 !i10b 1
-R11
-Z56 !s90 -reportprogress|300|-93|-work|work|C:/projeto/somador.vhd|
-Z57 !s107 C:/projeto/somador.vhd|
+Z54 !s108 1657912976.000000
+Z55 !s90 -reportprogress|300|-93|-work|work|C:/projeto/somador.vhd|
+Z56 !s107 C:/projeto/somador.vhd|
 !i113 1
 R14
 R15
@@ -377,34 +377,34 @@ VkMLEOf68<89Km6f2ZSI681
 !s100 gM@fSonJ6RIgmD@ZT9U3X0
 R9
 31
-R35
+R10
 !i10b 1
-R11
+R54
+R55
 R56
-R57
 !i113 1
 R14
 R15
 Esubtrator
-Z58 w1657659608
+Z57 w1657659608
 R4
 R3
 R5
 R6
 R0
-Z59 8C:/projeto/subtrator.vhd
-Z60 FC:/projeto/subtrator.vhd
+Z58 8C:/projeto/subtrator.vhd
+Z59 FC:/projeto/subtrator.vhd
 l0
 L5
 V9dPBJSGV1geZA9iIhI0g50
 !s100 ]9e>h`7S481OB5hmUUP?f0
 R9
 31
-R35
+R10
 !i10b 1
 R11
-Z61 !s90 -reportprogress|300|-93|-work|work|C:/projeto/subtrator.vhd|
-Z62 !s107 C:/projeto/subtrator.vhd|
+Z60 !s90 -reportprogress|300|-93|-work|work|C:/projeto/subtrator.vhd|
+Z61 !s107 C:/projeto/subtrator.vhd|
 !i113 1
 R14
 R15
@@ -420,35 +420,35 @@ Vgf^jENlZ8@7zW`7HcVa[c1
 !s100 fag19M`8oZR7L?1Bf1K?H1
 R9
 31
-R35
+R10
 !i10b 1
 R11
+R60
 R61
-R62
 !i113 1
 R14
 R15
-Etb_controladora
-Z63 w1657922106
+Etb_smart_cart
+Z62 w1657912864
 R4
 R3
 R2
 R5
 R6
 R0
-Z64 8C:/projeto/tb_Controladora.vhd
-Z65 FC:/projeto/tb_Controladora.vhd
+Z63 8C:/projeto/tb_smart_cart.vhd
+Z64 FC:/projeto/tb_smart_cart.vhd
 l0
 L6
-V<TEnT>Q9A@2kDJ0=9f8LJ2
-!s100 D66]GD;426LMfke<N40@M1
+VF8:N:5HIDZ?^FQc>2LbYW2
+!s100 ?H^N5hd0`VR@z3Mg3R_CU2
 R9
 31
-R10
+Z65 !s110 1657912978
 !i10b 1
-R19
-Z66 !s90 -reportprogress|300|-93|-work|work|C:/projeto/tb_Controladora.vhd|
-Z67 !s107 C:/projeto/tb_Controladora.vhd|
+R11
+Z66 !s90 -reportprogress|300|-93|-work|work|C:/projeto/tb_smart_cart.vhd|
+Z67 !s107 C:/projeto/tb_smart_cart.vhd|
 !i113 1
 R14
 R15
@@ -458,16 +458,16 @@ R3
 R2
 R5
 R6
-DEx4 work 15 tb_controladora 0 22 <TEnT>Q9A@2kDJ0=9f8LJ2
-l52
+DEx4 work 13 tb_smart_cart 0 22 F8:N:5HIDZ?^FQc>2LbYW2
+l51
 L9
-VID=oKnLFSGflWeB1bL0M]3
-!s100 kDhfYG<939?:9WC@VW;D[3
+VSHn7O:z`7=WTSSmg7gjc[3
+!s100 kk>5`YLBn?LANAUkRNMJN1
 R9
 31
-R10
+R65
 !i10b 1
-R19
+R11
 R66
 R67
 !i113 1
@@ -487,7 +487,7 @@ VE:R3GVM<06cgK3ZJXnYV73
 !s100 Hl9TZG1c;K[GTaF@0@MLo3
 R9
 31
-R35
+R10
 !i10b 1
 R11
 Z71 !s90 -reportprogress|300|-93|-work|work|C:/projeto/total_itens_reg.vhd|
@@ -506,7 +506,7 @@ Vo<KM2f4;Ej7E4[ETO71J_2
 !s100 [8>MR;V`>YWcDea1WgaGQ2
 R9
 31
-R35
+R10
 !i10b 1
 R11
 R71
@@ -528,7 +528,7 @@ V?EM6T8MP_zlYAgMo7Ama43
 !s100 Dc=Oeg1Y`SoSl1VgL`Y[L2
 R9
 31
-R35
+R10
 !i10b 1
 R11
 Z76 !s90 -reportprogress|300|-93|-work|work|C:/projeto/total_reg.vhd|
@@ -547,7 +547,7 @@ V2[<5nU;H36>67[Pc=bco]1
 !s100 51DG]zUK`E4B:3XVh^H1m0
 R9
 31
-R35
+R10
 !i10b 1
 R11
 R76
