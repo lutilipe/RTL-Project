@@ -73,7 +73,7 @@ begin
 
 	-- REGISTRADOR DE ESTADOS --
 	
-	process(clear, clock, add) is	
+	process(clear, clock) is	
 	begin
 		if(clear = '1') then
 			estado_atual <= inicio;
@@ -91,13 +91,6 @@ begin
 	end process;
 	
 	process (
-		aux_inicia_compra,
-		aux_finaliza_compra,
-		aux_cancelar,
-		aux_pagar_compra,
-		aux_cartao_lido,
-		aux_add,
-		aux_del,
 		inicia_compra,
 		finaliza_compra,
 		cancelar,
@@ -126,13 +119,8 @@ begin
 					
 	case estado_atual is 
 		when inicio =>
-			concluido <= '0';
-			desconta <= '0';
 			clr_total <= '1';
 			clr_total_itens <= '1';
-			ld_total_itens <= '0';
-			ld_total <= '0';
-			erro <= '0';
 			if (inicia_compra = '1' and aux_inicia_compra = '0') then
 				proximo_estado <= edicao_da_compra;
 			else
@@ -140,12 +128,6 @@ begin
 			end if;
 
 		when edicao_da_compra =>
-			clr_total <= '0';
-			clr_total_itens <= '0';
-			ld_total_itens <= '0';
-			ld_total <= '0';
-			erro <= '0';
-
 			if (add = '1' and aux_add = '0') then
 				proximo_estado <= confere_adicao;
 			elsif (del = '1' and aux_del = '0') then
@@ -207,7 +189,6 @@ begin
 			end if;
 
 		when verifica_saldo =>
-			ler_pagamento <= '0';
 			if (saldo_lt_total = '0') then
 				proximo_estado <= sucesso;
 			else

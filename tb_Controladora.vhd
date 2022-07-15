@@ -89,15 +89,49 @@ begin
 	begin
 		total_itens_lt_32 <= '1';
 		inicia_compra <= '1';
-		wait for 50 ns;
+		finaliza_compra <= '0';
+		cancelar <= '0';
+		pagar_compra <= '0';
+		cartao_lido <= '0';
+		clear <= '0';
+		saldo_lt_total <= '0';
+		add <= '0';
+		del <= '0';
+		wait for 40 ns;
 		
 		inicia_compra <= '0';
 		wait for 1 ns;
 		
+		add <= '1';
+		wait for 50 ns;
+		
+		add <= '0';
+		wait for 50 ns;
+		
+		del <= '1';
+		wait for 50 ns;
+		
+		del <= '0';
+		wait for 50 ns;
+		
 		finaliza_compra <= '1';
-		wait for 120 ns;
+		wait for 50 ns;
 		
 		finaliza_compra <= '0';
+		wait for 50 ns;
+		
+		pagar_compra <= '1';
+		wait for 50 ns;
+		
+		pagar_compra <= '0';
+		wait for 50 ns;
+		
+		cartao_lido <= '1';
+		wait for 50 ns;
+		
+		add <= '0';
+		del <= '0';
+		cartao_lido <= '0';
 		wait;
 		
 	end process;

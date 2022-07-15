@@ -1,5 +1,5 @@
 
-State Machine - |Controladora|estado_atual
+State Machine - |smart_cart|Controladora:A_Controladora|estado_atual
 Name estado_atual.sucesso estado_atual.verifica_saldo estado_atual.pagar estado_atual.confirma estado_atual.remove estado_atual.error estado_atual.adiciona estado_atual.confere_adicao estado_atual.edicao_da_compra estado_atual.inicio 
 estado_atual.inicio 0 0 0 0 0 0 0 0 0 0 
 estado_atual.edicao_da_compra 0 0 0 0 0 0 0 0 1 1 
