@@ -1,203 +1,4 @@
-|smart_cart
-inicia_compra => Controladora:A_Controladora.inicia_compra
-finaliza_compra => Controladora:A_Controladora.finaliza_compra
-cancelar => Controladora:A_Controladora.cancelar
-pagar_compra => Controladora:A_Controladora.pagar_compra
-cartao_lido => Controladora:A_Controladora.cartao_lido
-add => Controladora:A_Controladora.add
-del => Controladora:A_Controladora.del
-clock => Controladora:A_Controladora.clock
-clock => DataPath:B_DataPath.clock
-clear_controladora => Controladora:A_Controladora.clear
-valor_produto[0] => DataPath:B_DataPath.valor_produto[0]
-valor_produto[1] => DataPath:B_DataPath.valor_produto[1]
-valor_produto[2] => DataPath:B_DataPath.valor_produto[2]
-valor_produto[3] => DataPath:B_DataPath.valor_produto[3]
-valor_produto[4] => DataPath:B_DataPath.valor_produto[4]
-valor_produto[5] => DataPath:B_DataPath.valor_produto[5]
-valor_produto[6] => DataPath:B_DataPath.valor_produto[6]
-valor_produto[7] => DataPath:B_DataPath.valor_produto[7]
-valor_produto[8] => DataPath:B_DataPath.valor_produto[8]
-valor_produto[9] => DataPath:B_DataPath.valor_produto[9]
-valor_produto[10] => DataPath:B_DataPath.valor_produto[10]
-valor_produto[11] => DataPath:B_DataPath.valor_produto[11]
-valor_produto[12] => DataPath:B_DataPath.valor_produto[12]
-valor_produto[13] => DataPath:B_DataPath.valor_produto[13]
-valor_produto[14] => DataPath:B_DataPath.valor_produto[14]
-valor_produto[15] => DataPath:B_DataPath.valor_produto[15]
-valor_produto[16] => DataPath:B_DataPath.valor_produto[16]
-valor_produto[17] => DataPath:B_DataPath.valor_produto[17]
-valor_produto[18] => DataPath:B_DataPath.valor_produto[18]
-valor_produto[19] => DataPath:B_DataPath.valor_produto[19]
-valor_produto[20] => DataPath:B_DataPath.valor_produto[20]
-valor_produto[21] => DataPath:B_DataPath.valor_produto[21]
-valor_produto[22] => DataPath:B_DataPath.valor_produto[22]
-valor_produto[23] => DataPath:B_DataPath.valor_produto[23]
-valor_produto[24] => DataPath:B_DataPath.valor_produto[24]
-valor_produto[25] => DataPath:B_DataPath.valor_produto[25]
-valor_produto[26] => DataPath:B_DataPath.valor_produto[26]
-valor_produto[27] => DataPath:B_DataPath.valor_produto[27]
-valor_produto[28] => DataPath:B_DataPath.valor_produto[28]
-valor_produto[29] => DataPath:B_DataPath.valor_produto[29]
-valor_produto[30] => DataPath:B_DataPath.valor_produto[30]
-valor_produto[31] => DataPath:B_DataPath.valor_produto[31]
-saldo_cartao[0] => DataPath:B_DataPath.saldo_cartao[0]
-saldo_cartao[1] => DataPath:B_DataPath.saldo_cartao[1]
-saldo_cartao[2] => DataPath:B_DataPath.saldo_cartao[2]
-saldo_cartao[3] => DataPath:B_DataPath.saldo_cartao[3]
-saldo_cartao[4] => DataPath:B_DataPath.saldo_cartao[4]
-saldo_cartao[5] => DataPath:B_DataPath.saldo_cartao[5]
-saldo_cartao[6] => DataPath:B_DataPath.saldo_cartao[6]
-saldo_cartao[7] => DataPath:B_DataPath.saldo_cartao[7]
-saldo_cartao[8] => DataPath:B_DataPath.saldo_cartao[8]
-saldo_cartao[9] => DataPath:B_DataPath.saldo_cartao[9]
-saldo_cartao[10] => DataPath:B_DataPath.saldo_cartao[10]
-saldo_cartao[11] => DataPath:B_DataPath.saldo_cartao[11]
-saldo_cartao[12] => DataPath:B_DataPath.saldo_cartao[12]
-saldo_cartao[13] => DataPath:B_DataPath.saldo_cartao[13]
-saldo_cartao[14] => DataPath:B_DataPath.saldo_cartao[14]
-saldo_cartao[15] => DataPath:B_DataPath.saldo_cartao[15]
-saldo_cartao[16] => DataPath:B_DataPath.saldo_cartao[16]
-saldo_cartao[17] => DataPath:B_DataPath.saldo_cartao[17]
-saldo_cartao[18] => DataPath:B_DataPath.saldo_cartao[18]
-saldo_cartao[19] => DataPath:B_DataPath.saldo_cartao[19]
-saldo_cartao[20] => DataPath:B_DataPath.saldo_cartao[20]
-saldo_cartao[21] => DataPath:B_DataPath.saldo_cartao[21]
-saldo_cartao[22] => DataPath:B_DataPath.saldo_cartao[22]
-saldo_cartao[23] => DataPath:B_DataPath.saldo_cartao[23]
-saldo_cartao[24] => DataPath:B_DataPath.saldo_cartao[24]
-saldo_cartao[25] => DataPath:B_DataPath.saldo_cartao[25]
-saldo_cartao[26] => DataPath:B_DataPath.saldo_cartao[26]
-saldo_cartao[27] => DataPath:B_DataPath.saldo_cartao[27]
-saldo_cartao[28] => DataPath:B_DataPath.saldo_cartao[28]
-saldo_cartao[29] => DataPath:B_DataPath.saldo_cartao[29]
-saldo_cartao[30] => DataPath:B_DataPath.saldo_cartao[30]
-saldo_cartao[31] => DataPath:B_DataPath.saldo_cartao[31]
-saldo_restante[0] <= DataPath:B_DataPath.saldo_restante[0]
-saldo_restante[1] <= DataPath:B_DataPath.saldo_restante[1]
-saldo_restante[2] <= DataPath:B_DataPath.saldo_restante[2]
-saldo_restante[3] <= DataPath:B_DataPath.saldo_restante[3]
-saldo_restante[4] <= DataPath:B_DataPath.saldo_restante[4]
-saldo_restante[5] <= DataPath:B_DataPath.saldo_restante[5]
-saldo_restante[6] <= DataPath:B_DataPath.saldo_restante[6]
-saldo_restante[7] <= DataPath:B_DataPath.saldo_restante[7]
-saldo_restante[8] <= DataPath:B_DataPath.saldo_restante[8]
-saldo_restante[9] <= DataPath:B_DataPath.saldo_restante[9]
-saldo_restante[10] <= DataPath:B_DataPath.saldo_restante[10]
-saldo_restante[11] <= DataPath:B_DataPath.saldo_restante[11]
-saldo_restante[12] <= DataPath:B_DataPath.saldo_restante[12]
-saldo_restante[13] <= DataPath:B_DataPath.saldo_restante[13]
-saldo_restante[14] <= DataPath:B_DataPath.saldo_restante[14]
-saldo_restante[15] <= DataPath:B_DataPath.saldo_restante[15]
-saldo_restante[16] <= DataPath:B_DataPath.saldo_restante[16]
-saldo_restante[17] <= DataPath:B_DataPath.saldo_restante[17]
-saldo_restante[18] <= DataPath:B_DataPath.saldo_restante[18]
-saldo_restante[19] <= DataPath:B_DataPath.saldo_restante[19]
-saldo_restante[20] <= DataPath:B_DataPath.saldo_restante[20]
-saldo_restante[21] <= DataPath:B_DataPath.saldo_restante[21]
-saldo_restante[22] <= DataPath:B_DataPath.saldo_restante[22]
-saldo_restante[23] <= DataPath:B_DataPath.saldo_restante[23]
-saldo_restante[24] <= DataPath:B_DataPath.saldo_restante[24]
-saldo_restante[25] <= DataPath:B_DataPath.saldo_restante[25]
-saldo_restante[26] <= DataPath:B_DataPath.saldo_restante[26]
-saldo_restante[27] <= DataPath:B_DataPath.saldo_restante[27]
-saldo_restante[28] <= DataPath:B_DataPath.saldo_restante[28]
-saldo_restante[29] <= DataPath:B_DataPath.saldo_restante[29]
-saldo_restante[30] <= DataPath:B_DataPath.saldo_restante[30]
-saldo_restante[31] <= DataPath:B_DataPath.saldo_restante[31]
-valor_compra[0] <= DataPath:B_DataPath.valor_compra[0]
-valor_compra[1] <= DataPath:B_DataPath.valor_compra[1]
-valor_compra[2] <= DataPath:B_DataPath.valor_compra[2]
-valor_compra[3] <= DataPath:B_DataPath.valor_compra[3]
-valor_compra[4] <= DataPath:B_DataPath.valor_compra[4]
-valor_compra[5] <= DataPath:B_DataPath.valor_compra[5]
-valor_compra[6] <= DataPath:B_DataPath.valor_compra[6]
-valor_compra[7] <= DataPath:B_DataPath.valor_compra[7]
-valor_compra[8] <= DataPath:B_DataPath.valor_compra[8]
-valor_compra[9] <= DataPath:B_DataPath.valor_compra[9]
-valor_compra[10] <= DataPath:B_DataPath.valor_compra[10]
-valor_compra[11] <= DataPath:B_DataPath.valor_compra[11]
-valor_compra[12] <= DataPath:B_DataPath.valor_compra[12]
-valor_compra[13] <= DataPath:B_DataPath.valor_compra[13]
-valor_compra[14] <= DataPath:B_DataPath.valor_compra[14]
-valor_compra[15] <= DataPath:B_DataPath.valor_compra[15]
-valor_compra[16] <= DataPath:B_DataPath.valor_compra[16]
-valor_compra[17] <= DataPath:B_DataPath.valor_compra[17]
-valor_compra[18] <= DataPath:B_DataPath.valor_compra[18]
-valor_compra[19] <= DataPath:B_DataPath.valor_compra[19]
-valor_compra[20] <= DataPath:B_DataPath.valor_compra[20]
-valor_compra[21] <= DataPath:B_DataPath.valor_compra[21]
-valor_compra[22] <= DataPath:B_DataPath.valor_compra[22]
-valor_compra[23] <= DataPath:B_DataPath.valor_compra[23]
-valor_compra[24] <= DataPath:B_DataPath.valor_compra[24]
-valor_compra[25] <= DataPath:B_DataPath.valor_compra[25]
-valor_compra[26] <= DataPath:B_DataPath.valor_compra[26]
-valor_compra[27] <= DataPath:B_DataPath.valor_compra[27]
-valor_compra[28] <= DataPath:B_DataPath.valor_compra[28]
-valor_compra[29] <= DataPath:B_DataPath.valor_compra[29]
-valor_compra[30] <= DataPath:B_DataPath.valor_compra[30]
-valor_compra[31] <= DataPath:B_DataPath.valor_compra[31]
-quantidade_itens[0] <= DataPath:B_DataPath.quantidade_itens[0]
-quantidade_itens[1] <= DataPath:B_DataPath.quantidade_itens[1]
-quantidade_itens[2] <= DataPath:B_DataPath.quantidade_itens[2]
-quantidade_itens[3] <= DataPath:B_DataPath.quantidade_itens[3]
-quantidade_itens[4] <= DataPath:B_DataPath.quantidade_itens[4]
-quantidade_itens[5] <= DataPath:B_DataPath.quantidade_itens[5]
-quantidade_itens[6] <= DataPath:B_DataPath.quantidade_itens[6]
-erro <= Controladora:A_Controladora.erro
-concluido <= Controladora:A_Controladora.concluido
-desconta <= Controladora:A_Controladora.desconta
-ler_pagamento <= Controladora:A_Controladora.ler_pagamento
-
-
-|smart_cart|Controladora:A_Controladora
-inicia_compra => process_1.IN1
-inicia_compra => aux_inicia_compra.DATAIN
-finaliza_compra => process_1.IN1
-finaliza_compra => aux_finaliza_compra.DATAIN
-cancelar => process_1.IN1
-cancelar => aux_cancelar.DATAIN
-pagar_compra => process_1.IN1
-pagar_compra => aux_pagar_compra.DATAIN
-cartao_lido => process_1.IN1
-cartao_lido => aux_cartao_lido.DATAIN
-add => process_1.IN1
-add => aux_add.DATAIN
-del => process_1.IN1
-del => aux_del.DATAIN
-total_itens_lt_32 => proximo_estado.adiciona.DATAB
-total_itens_lt_32 => proximo_estado.error.DATAB
-saldo_lt_total => Selector5.IN4
-saldo_lt_total => proximo_estado.sucesso.DATAB
-clock => aux_cartao_lido.CLK
-clock => aux_del.CLK
-clock => aux_add.CLK
-clock => aux_pagar_compra.CLK
-clock => aux_cancelar.CLK
-clock => aux_finaliza_compra.CLK
-clock => aux_inicia_compra.CLK
-clock => estado_atual~1.DATAIN
-clear => estado_atual~3.DATAIN
-clear => aux_inicia_compra.ENA
-clear => aux_finaliza_compra.ENA
-clear => aux_cancelar.ENA
-clear => aux_pagar_compra.ENA
-clear => aux_add.ENA
-clear => aux_del.ENA
-clear => aux_cartao_lido.ENA
-ld_total <= ld_total.DB_MAX_OUTPUT_PORT_TYPE
-clr_total <= clr_total.DB_MAX_OUTPUT_PORT_TYPE
-ld_total_itens <= ld_total_itens.DB_MAX_OUTPUT_PORT_TYPE
-clr_total_itens <= clr_total_itens.DB_MAX_OUTPUT_PORT_TYPE
-add_sel <= add_sel.DB_MAX_OUTPUT_PORT_TYPE
-del_sel <= del_sel.DB_MAX_OUTPUT_PORT_TYPE
-erro <= erro.DB_MAX_OUTPUT_PORT_TYPE
-concluido <= concluido.DB_MAX_OUTPUT_PORT_TYPE
-desconta <= desconta.DB_MAX_OUTPUT_PORT_TYPE
-ler_pagamento <= ler_pagamento.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|smart_cart|DataPath:B_DataPath
+|DataPath
 valor_produto[0] => somador:A_Somador.y[0]
 valor_produto[0] => subtrator:B_Subtrator_1.y[0]
 valor_produto[1] => somador:A_Somador.y[1]
@@ -336,82 +137,82 @@ del_sel => mux_4_1:C_Mux_4_1_32_bits.s1
 del_sel => mux_4_1:I_Mux_4_1_7_bits.s1
 clock => total_reg:D_Total_Reg.clock
 clock => total_itens_reg:J_Total_Itens_Reg.clock
-saldo_restante[0] <= subtrator:E_Subtrator_2.s[0]
-saldo_restante[1] <= subtrator:E_Subtrator_2.s[1]
-saldo_restante[2] <= subtrator:E_Subtrator_2.s[2]
-saldo_restante[3] <= subtrator:E_Subtrator_2.s[3]
-saldo_restante[4] <= subtrator:E_Subtrator_2.s[4]
-saldo_restante[5] <= subtrator:E_Subtrator_2.s[5]
-saldo_restante[6] <= subtrator:E_Subtrator_2.s[6]
-saldo_restante[7] <= subtrator:E_Subtrator_2.s[7]
-saldo_restante[8] <= subtrator:E_Subtrator_2.s[8]
-saldo_restante[9] <= subtrator:E_Subtrator_2.s[9]
-saldo_restante[10] <= subtrator:E_Subtrator_2.s[10]
-saldo_restante[11] <= subtrator:E_Subtrator_2.s[11]
-saldo_restante[12] <= subtrator:E_Subtrator_2.s[12]
-saldo_restante[13] <= subtrator:E_Subtrator_2.s[13]
-saldo_restante[14] <= subtrator:E_Subtrator_2.s[14]
-saldo_restante[15] <= subtrator:E_Subtrator_2.s[15]
-saldo_restante[16] <= subtrator:E_Subtrator_2.s[16]
-saldo_restante[17] <= subtrator:E_Subtrator_2.s[17]
-saldo_restante[18] <= subtrator:E_Subtrator_2.s[18]
-saldo_restante[19] <= subtrator:E_Subtrator_2.s[19]
-saldo_restante[20] <= subtrator:E_Subtrator_2.s[20]
-saldo_restante[21] <= subtrator:E_Subtrator_2.s[21]
-saldo_restante[22] <= subtrator:E_Subtrator_2.s[22]
-saldo_restante[23] <= subtrator:E_Subtrator_2.s[23]
-saldo_restante[24] <= subtrator:E_Subtrator_2.s[24]
-saldo_restante[25] <= subtrator:E_Subtrator_2.s[25]
-saldo_restante[26] <= subtrator:E_Subtrator_2.s[26]
-saldo_restante[27] <= subtrator:E_Subtrator_2.s[27]
-saldo_restante[28] <= subtrator:E_Subtrator_2.s[28]
-saldo_restante[29] <= subtrator:E_Subtrator_2.s[29]
-saldo_restante[30] <= subtrator:E_Subtrator_2.s[30]
-saldo_restante[31] <= subtrator:E_Subtrator_2.s[31]
-valor_compra[0] <= total_reg:D_Total_Reg.valor_compra[0]
-valor_compra[1] <= total_reg:D_Total_Reg.valor_compra[1]
-valor_compra[2] <= total_reg:D_Total_Reg.valor_compra[2]
-valor_compra[3] <= total_reg:D_Total_Reg.valor_compra[3]
-valor_compra[4] <= total_reg:D_Total_Reg.valor_compra[4]
-valor_compra[5] <= total_reg:D_Total_Reg.valor_compra[5]
-valor_compra[6] <= total_reg:D_Total_Reg.valor_compra[6]
-valor_compra[7] <= total_reg:D_Total_Reg.valor_compra[7]
-valor_compra[8] <= total_reg:D_Total_Reg.valor_compra[8]
-valor_compra[9] <= total_reg:D_Total_Reg.valor_compra[9]
-valor_compra[10] <= total_reg:D_Total_Reg.valor_compra[10]
-valor_compra[11] <= total_reg:D_Total_Reg.valor_compra[11]
-valor_compra[12] <= total_reg:D_Total_Reg.valor_compra[12]
-valor_compra[13] <= total_reg:D_Total_Reg.valor_compra[13]
-valor_compra[14] <= total_reg:D_Total_Reg.valor_compra[14]
-valor_compra[15] <= total_reg:D_Total_Reg.valor_compra[15]
-valor_compra[16] <= total_reg:D_Total_Reg.valor_compra[16]
-valor_compra[17] <= total_reg:D_Total_Reg.valor_compra[17]
-valor_compra[18] <= total_reg:D_Total_Reg.valor_compra[18]
-valor_compra[19] <= total_reg:D_Total_Reg.valor_compra[19]
-valor_compra[20] <= total_reg:D_Total_Reg.valor_compra[20]
-valor_compra[21] <= total_reg:D_Total_Reg.valor_compra[21]
-valor_compra[22] <= total_reg:D_Total_Reg.valor_compra[22]
-valor_compra[23] <= total_reg:D_Total_Reg.valor_compra[23]
-valor_compra[24] <= total_reg:D_Total_Reg.valor_compra[24]
-valor_compra[25] <= total_reg:D_Total_Reg.valor_compra[25]
-valor_compra[26] <= total_reg:D_Total_Reg.valor_compra[26]
-valor_compra[27] <= total_reg:D_Total_Reg.valor_compra[27]
-valor_compra[28] <= total_reg:D_Total_Reg.valor_compra[28]
-valor_compra[29] <= total_reg:D_Total_Reg.valor_compra[29]
-valor_compra[30] <= total_reg:D_Total_Reg.valor_compra[30]
-valor_compra[31] <= total_reg:D_Total_Reg.valor_compra[31]
-quantidade_itens[0] <= total_itens_reg:J_Total_Itens_Reg.quantidade_itens[0]
-quantidade_itens[1] <= total_itens_reg:J_Total_Itens_Reg.quantidade_itens[1]
-quantidade_itens[2] <= total_itens_reg:J_Total_Itens_Reg.quantidade_itens[2]
-quantidade_itens[3] <= total_itens_reg:J_Total_Itens_Reg.quantidade_itens[3]
-quantidade_itens[4] <= total_itens_reg:J_Total_Itens_Reg.quantidade_itens[4]
-quantidade_itens[5] <= total_itens_reg:J_Total_Itens_Reg.quantidade_itens[5]
-quantidade_itens[6] <= total_itens_reg:J_Total_Itens_Reg.quantidade_itens[6]
-total_itens_lt_32 <= comparador_itens:K_Comparador_Itens.total_itens_lt_32
-saldo_lt_total <= comparador_saldo:F_Comparador_Saldo.saldo_lt_total
+saldo_restante[0] << subtrator:E_Subtrator_2.s[0]
+saldo_restante[1] << subtrator:E_Subtrator_2.s[1]
+saldo_restante[2] << subtrator:E_Subtrator_2.s[2]
+saldo_restante[3] << subtrator:E_Subtrator_2.s[3]
+saldo_restante[4] << subtrator:E_Subtrator_2.s[4]
+saldo_restante[5] << subtrator:E_Subtrator_2.s[5]
+saldo_restante[6] << subtrator:E_Subtrator_2.s[6]
+saldo_restante[7] << subtrator:E_Subtrator_2.s[7]
+saldo_restante[8] << subtrator:E_Subtrator_2.s[8]
+saldo_restante[9] << subtrator:E_Subtrator_2.s[9]
+saldo_restante[10] << subtrator:E_Subtrator_2.s[10]
+saldo_restante[11] << subtrator:E_Subtrator_2.s[11]
+saldo_restante[12] << subtrator:E_Subtrator_2.s[12]
+saldo_restante[13] << subtrator:E_Subtrator_2.s[13]
+saldo_restante[14] << subtrator:E_Subtrator_2.s[14]
+saldo_restante[15] << subtrator:E_Subtrator_2.s[15]
+saldo_restante[16] << subtrator:E_Subtrator_2.s[16]
+saldo_restante[17] << subtrator:E_Subtrator_2.s[17]
+saldo_restante[18] << subtrator:E_Subtrator_2.s[18]
+saldo_restante[19] << subtrator:E_Subtrator_2.s[19]
+saldo_restante[20] << subtrator:E_Subtrator_2.s[20]
+saldo_restante[21] << subtrator:E_Subtrator_2.s[21]
+saldo_restante[22] << subtrator:E_Subtrator_2.s[22]
+saldo_restante[23] << subtrator:E_Subtrator_2.s[23]
+saldo_restante[24] << subtrator:E_Subtrator_2.s[24]
+saldo_restante[25] << subtrator:E_Subtrator_2.s[25]
+saldo_restante[26] << subtrator:E_Subtrator_2.s[26]
+saldo_restante[27] << subtrator:E_Subtrator_2.s[27]
+saldo_restante[28] << subtrator:E_Subtrator_2.s[28]
+saldo_restante[29] << subtrator:E_Subtrator_2.s[29]
+saldo_restante[30] << subtrator:E_Subtrator_2.s[30]
+saldo_restante[31] << subtrator:E_Subtrator_2.s[31]
+valor_compra[0] << total_reg:D_Total_Reg.valor_compra[0]
+valor_compra[1] << total_reg:D_Total_Reg.valor_compra[1]
+valor_compra[2] << total_reg:D_Total_Reg.valor_compra[2]
+valor_compra[3] << total_reg:D_Total_Reg.valor_compra[3]
+valor_compra[4] << total_reg:D_Total_Reg.valor_compra[4]
+valor_compra[5] << total_reg:D_Total_Reg.valor_compra[5]
+valor_compra[6] << total_reg:D_Total_Reg.valor_compra[6]
+valor_compra[7] << total_reg:D_Total_Reg.valor_compra[7]
+valor_compra[8] << total_reg:D_Total_Reg.valor_compra[8]
+valor_compra[9] << total_reg:D_Total_Reg.valor_compra[9]
+valor_compra[10] << total_reg:D_Total_Reg.valor_compra[10]
+valor_compra[11] << total_reg:D_Total_Reg.valor_compra[11]
+valor_compra[12] << total_reg:D_Total_Reg.valor_compra[12]
+valor_compra[13] << total_reg:D_Total_Reg.valor_compra[13]
+valor_compra[14] << total_reg:D_Total_Reg.valor_compra[14]
+valor_compra[15] << total_reg:D_Total_Reg.valor_compra[15]
+valor_compra[16] << total_reg:D_Total_Reg.valor_compra[16]
+valor_compra[17] << total_reg:D_Total_Reg.valor_compra[17]
+valor_compra[18] << total_reg:D_Total_Reg.valor_compra[18]
+valor_compra[19] << total_reg:D_Total_Reg.valor_compra[19]
+valor_compra[20] << total_reg:D_Total_Reg.valor_compra[20]
+valor_compra[21] << total_reg:D_Total_Reg.valor_compra[21]
+valor_compra[22] << total_reg:D_Total_Reg.valor_compra[22]
+valor_compra[23] << total_reg:D_Total_Reg.valor_compra[23]
+valor_compra[24] << total_reg:D_Total_Reg.valor_compra[24]
+valor_compra[25] << total_reg:D_Total_Reg.valor_compra[25]
+valor_compra[26] << total_reg:D_Total_Reg.valor_compra[26]
+valor_compra[27] << total_reg:D_Total_Reg.valor_compra[27]
+valor_compra[28] << total_reg:D_Total_Reg.valor_compra[28]
+valor_compra[29] << total_reg:D_Total_Reg.valor_compra[29]
+valor_compra[30] << total_reg:D_Total_Reg.valor_compra[30]
+valor_compra[31] << total_reg:D_Total_Reg.valor_compra[31]
+quantidade_itens[0] << total_itens_reg:J_Total_Itens_Reg.quantidade_itens[0]
+quantidade_itens[1] << total_itens_reg:J_Total_Itens_Reg.quantidade_itens[1]
+quantidade_itens[2] << total_itens_reg:J_Total_Itens_Reg.quantidade_itens[2]
+quantidade_itens[3] << total_itens_reg:J_Total_Itens_Reg.quantidade_itens[3]
+quantidade_itens[4] << total_itens_reg:J_Total_Itens_Reg.quantidade_itens[4]
+quantidade_itens[5] << total_itens_reg:J_Total_Itens_Reg.quantidade_itens[5]
+quantidade_itens[6] << total_itens_reg:J_Total_Itens_Reg.quantidade_itens[6]
+total_itens_lt_32 << comparador_itens:K_Comparador_Itens.total_itens_lt_32
+saldo_lt_total << comparador_saldo:F_Comparador_Saldo.saldo_lt_total
 
 
-|smart_cart|DataPath:B_DataPath|somador:A_Somador
+|DataPath|somador:A_Somador
 x[0] => Add0.IN32
 x[1] => Add0.IN31
 x[2] => Add0.IN30
@@ -510,7 +311,7 @@ s[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 s[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|smart_cart|DataPath:B_DataPath|subtrator:B_Subtrator_1
+|DataPath|subtrator:B_Subtrator_1
 x[0] => Add0.IN64
 x[1] => Add0.IN63
 x[2] => Add0.IN62
@@ -609,7 +410,7 @@ s[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 s[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|smart_cart|DataPath:B_DataPath|mux_4_1:C_Mux_4_1_32_bits
+|DataPath|mux_4_1:C_Mux_4_1_32_bits
 in0[0] => out1.DATAA
 in0[0] => out1.DATAB
 in0[1] => out1.DATAA
@@ -812,7 +613,7 @@ out1[30] <= out1.DB_MAX_OUTPUT_PORT_TYPE
 out1[31] <= out1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|smart_cart|DataPath:B_DataPath|total_reg:D_Total_Reg
+|DataPath|total_reg:D_Total_Reg
 total_in[0] => valor_compra[0]~reg0.DATAIN
 total_in[1] => valor_compra[1]~reg0.DATAIN
 total_in[2] => valor_compra[2]~reg0.DATAIN
@@ -975,7 +776,7 @@ valor_compra[30] <= valor_compra[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 valor_compra[31] <= valor_compra[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|smart_cart|DataPath:B_DataPath|subtrator:E_Subtrator_2
+|DataPath|subtrator:E_Subtrator_2
 x[0] => Add0.IN64
 x[1] => Add0.IN63
 x[2] => Add0.IN62
@@ -1074,7 +875,7 @@ s[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 s[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|smart_cart|DataPath:B_DataPath|comparador_saldo:F_Comparador_Saldo
+|DataPath|comparador_saldo:F_Comparador_Saldo
 valor_total[0] => LessThan0.IN32
 valor_total[1] => LessThan0.IN31
 valor_total[2] => LessThan0.IN30
@@ -1142,7 +943,7 @@ saldo_cartao[31] => LessThan0.IN33
 saldo_lt_total <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|smart_cart|DataPath:B_DataPath|incrementador:G_Incrementador
+|DataPath|incrementador:G_Incrementador
 x[0] => Add0.IN14
 x[1] => Add0.IN13
 x[2] => Add0.IN12
@@ -1159,7 +960,7 @@ s[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 s[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|smart_cart|DataPath:B_DataPath|decrementador:H_Decrementador
+|DataPath|decrementador:H_Decrementador
 x[0] => Add0.IN14
 x[1] => Add0.IN13
 x[2] => Add0.IN12
@@ -1176,7 +977,7 @@ s[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 s[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|smart_cart|DataPath:B_DataPath|mux_4_1:I_Mux_4_1_7_bits
+|DataPath|mux_4_1:I_Mux_4_1_7_bits
 in0[0] => out1.DATAA
 in0[0] => out1.DATAB
 in0[1] => out1.DATAA
@@ -1229,7 +1030,7 @@ out1[5] <= out1.DB_MAX_OUTPUT_PORT_TYPE
 out1[6] <= out1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|smart_cart|DataPath:B_DataPath|total_itens_reg:J_Total_Itens_Reg
+|DataPath|total_itens_reg:J_Total_Itens_Reg
 total_itens_in[0] => quantidade_itens[0]~reg0.DATAIN
 total_itens_in[1] => quantidade_itens[1]~reg0.DATAIN
 total_itens_in[2] => quantidade_itens[2]~reg0.DATAIN
@@ -1267,7 +1068,7 @@ quantidade_itens[5] <= quantidade_itens[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 quantidade_itens[6] <= quantidade_itens[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|smart_cart|DataPath:B_DataPath|comparador_itens:K_Comparador_Itens
+|DataPath|comparador_itens:K_Comparador_Itens
 total_itens[0] => LessThan0.IN14
 total_itens[1] => LessThan0.IN13
 total_itens[2] => LessThan0.IN12

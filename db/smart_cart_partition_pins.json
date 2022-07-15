@@ -288,19 +288,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "erro",
+					"name" : "total_itens_lt_32",
 					"strict" : false
 				},
 				{
-					"name" : "concluido",
-					"strict" : false
-				},
-				{
-					"name" : "desconta",
-					"strict" : false
-				},
-				{
-					"name" : "ler_pagamento",
+					"name" : "saldo_lt_total",
 					"strict" : false
 				},
 				{
@@ -440,6 +432,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "del_sel",
+					"strict" : false
+				},
+				{
+					"name" : "add_sel",
+					"strict" : false
+				},
+				{
+					"name" : "clr_total",
+					"strict" : false
+				},
+				{
+					"name" : "ld_total",
+					"strict" : false
+				},
+				{
 					"name" : "valor_produto[1]",
 					"strict" : false
 				},
@@ -564,35 +572,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clear_controladora",
+					"name" : "clr_total_itens",
 					"strict" : false
 				},
 				{
-					"name" : "pagar_compra",
-					"strict" : false
-				},
-				{
-					"name" : "cartao_lido",
-					"strict" : false
-				},
-				{
-					"name" : "add",
-					"strict" : false
-				},
-				{
-					"name" : "del",
-					"strict" : false
-				},
-				{
-					"name" : "cancelar",
-					"strict" : false
-				},
-				{
-					"name" : "inicia_compra",
-					"strict" : false
-				},
-				{
-					"name" : "finaliza_compra",
+					"name" : "ld_total_itens",
 					"strict" : false
 				}
 			]

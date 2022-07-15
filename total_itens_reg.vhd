@@ -10,7 +10,7 @@ entity total_itens_reg is
     port (
         total_itens_in : in std_logic_vector(W-1 downto 0);
         ld, clock, clear : in std_logic;
-        quantidade_itens : out std_logic_vector(W-1 downto 0)
+        quantidade_itens : out std_logic_vector(W-1 downto 0) := (others => '0')
     );
 end total_itens_reg;
 

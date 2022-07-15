@@ -84,8 +84,14 @@ begin
 	process
 	begin
 		clear <= '0';
+		
+		saldo_cartao <= std_logic_vector(to_unsigned(100, 32)); wait;
+		valor_produto <= std_logic_vector(to_unsigned(30, 32)); wait;
 
-
+		inicia_compra <= '0';
+		cancelar <= '0';
+		
+		
 	end process;
 
 end teste;

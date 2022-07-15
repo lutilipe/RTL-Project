@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Jul 15 00:31:29 2022
+Analysis & Synthesis Status : Successful - Fri Jul 15 16:04:35 2022
 Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 Revision Name : smart_cart
-Top-level Entity Name : smart_cart
+Top-level Entity Name : DataPath
 Family : Cyclone IV E
-Total logic elements : 165
-    Total combinational functions : 158
-    Dedicated logic registers : 56
-Total registers : 56
-Total pins : 148
+Total logic elements : 140
+    Total combinational functions : 140
+    Dedicated logic registers : 39
+Total registers : 39
+Total pins : 144
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

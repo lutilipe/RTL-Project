@@ -1,5 +1,5 @@
 Analysis & Synthesis report for smart_cart
-Fri Jul 15 00:31:29 2022
+Fri Jul 15 16:04:35 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -13,18 +13,17 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |smart_cart|Controladora:A_Controladora|estado_atual
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: DataPath:B_DataPath|mux_4_1:C_Mux_4_1_32_bits
- 11. Parameter Settings for User Entity Instance: DataPath:B_DataPath|comparador_saldo:F_Comparador_Saldo
- 12. Parameter Settings for User Entity Instance: DataPath:B_DataPath|incrementador:G_Incrementador
- 13. Parameter Settings for User Entity Instance: DataPath:B_DataPath|decrementador:H_Decrementador
- 14. Parameter Settings for User Entity Instance: DataPath:B_DataPath|mux_4_1:I_Mux_4_1_7_bits
- 15. Parameter Settings for User Entity Instance: DataPath:B_DataPath|total_itens_reg:J_Total_Itens_Reg
- 16. Parameter Settings for User Entity Instance: DataPath:B_DataPath|comparador_itens:K_Comparador_Itens
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: mux_4_1:C_Mux_4_1_32_bits
+ 10. Parameter Settings for User Entity Instance: comparador_saldo:F_Comparador_Saldo
+ 11. Parameter Settings for User Entity Instance: incrementador:G_Incrementador
+ 12. Parameter Settings for User Entity Instance: decrementador:H_Decrementador
+ 13. Parameter Settings for User Entity Instance: mux_4_1:I_Mux_4_1_7_bits
+ 14. Parameter Settings for User Entity Instance: total_itens_reg:J_Total_Itens_Reg
+ 15. Parameter Settings for User Entity Instance: comparador_itens:K_Comparador_Itens
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -51,16 +50,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jul 15 00:31:29 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 15 16:04:35 2022       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; smart_cart                                  ;
-; Top-level Entity Name              ; smart_cart                                  ;
+; Top-level Entity Name              ; DataPath                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 165                                         ;
-;     Total combinational functions  ; 158                                         ;
-;     Dedicated logic registers      ; 56                                          ;
-; Total registers                    ; 56                                          ;
-; Total pins                         ; 148                                         ;
+; Total logic elements               ; 140                                         ;
+;     Total combinational functions  ; 140                                         ;
+;     Dedicated logic registers      ; 39                                          ;
+; Total registers                    ; 39                                          ;
+; Total pins                         ; 144                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -73,7 +72,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                            ; smart_cart         ; smart_cart         ;
+; Top-level entity name                                            ; DataPath           ; smart_cart         ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -185,8 +184,6 @@ https://fpgasoftware.intel.com/eula.
 ; comparador_itens.vhd             ; yes             ; User VHDL File  ; C:/projeto/comparador_itens.vhd ;         ;
 ; comparador_saldo.vhd             ; yes             ; User VHDL File  ; C:/projeto/comparador_saldo.vhd ;         ;
 ; DataPath.vhd                     ; yes             ; User VHDL File  ; C:/projeto/DataPath.vhd         ;         ;
-; Controladora.vhd                 ; yes             ; User VHDL File  ; C:/projeto/Controladora.vhd     ;         ;
-; smart_cart.vhd                   ; yes             ; User VHDL File  ; C:/projeto/smart_cart.vhd       ;         ;
 +----------------------------------+-----------------+-----------------+---------------------------------+---------+
 
 
@@ -195,67 +192,48 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 165         ;
+; Estimated Total logic elements              ; 140         ;
 ;                                             ;             ;
-; Total combinational functions               ; 158         ;
+; Total combinational functions               ; 140         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 12          ;
-;     -- 3 input functions                    ; 105         ;
-;     -- <=2 input functions                  ; 41          ;
+;     -- 4 input functions                    ; 0           ;
+;     -- 3 input functions                    ; 133         ;
+;     -- <=2 input functions                  ; 7           ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 58          ;
+;     -- normal mode                          ; 40          ;
 ;     -- arithmetic mode                      ; 100         ;
 ;                                             ;             ;
-; Total registers                             ; 56          ;
-;     -- Dedicated logic registers            ; 56          ;
+; Total registers                             ; 39          ;
+;     -- Dedicated logic registers            ; 39          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 148         ;
+; I/O pins                                    ; 144         ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 56          ;
-; Total fan-out                               ; 875         ;
-; Average fan-out                             ; 1.72        ;
+; Maximum fan-out                             ; 39          ;
+; Total fan-out                               ; 786         ;
+; Average fan-out                             ; 1.68        ;
 +---------------------------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                            ;
-+---------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                 ; Entity Name      ; Library Name ;
-+---------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+------------------+--------------+
-; |smart_cart                                 ; 158 (0)             ; 56 (0)                    ; 0           ; 0            ; 0       ; 0         ; 148  ; 0            ; |smart_cart                                                         ; smart_cart       ; work         ;
-;    |Controladora:A_Controladora|            ; 22 (22)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |smart_cart|Controladora:A_Controladora                             ; Controladora     ; work         ;
-;    |DataPath:B_DataPath|                    ; 136 (0)             ; 39 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |smart_cart|DataPath:B_DataPath                                     ; DataPath         ; work         ;
-;       |comparador_saldo:F_Comparador_Saldo| ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |smart_cart|DataPath:B_DataPath|comparador_saldo:F_Comparador_Saldo ; comparador_saldo ; work         ;
-;       |subtrator:B_Subtrator_1|             ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |smart_cart|DataPath:B_DataPath|subtrator:B_Subtrator_1             ; subtrator        ; work         ;
-;       |subtrator:E_Subtrator_2|             ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |smart_cart|DataPath:B_DataPath|subtrator:E_Subtrator_2             ; subtrator        ; work         ;
-;       |total_itens_reg:J_Total_Itens_Reg|   ; 7 (7)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |smart_cart|DataPath:B_DataPath|total_itens_reg:J_Total_Itens_Reg   ; total_itens_reg  ; work         ;
-;       |total_reg:D_Total_Reg|               ; 33 (33)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |smart_cart|DataPath:B_DataPath|total_reg:D_Total_Reg               ; total_reg        ; work         ;
-+---------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------+------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                   ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Entity Name      ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+------------------+--------------+
+; |DataPath                                ; 140 (0)             ; 39 (0)                    ; 0           ; 0            ; 0       ; 0         ; 144  ; 0            ; |DataPath                                     ; DataPath         ; work         ;
+;    |comparador_itens:K_Comparador_Itens| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DataPath|comparador_itens:K_Comparador_Itens ; comparador_itens ; work         ;
+;    |comparador_saldo:F_Comparador_Saldo| ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DataPath|comparador_saldo:F_Comparador_Saldo ; comparador_saldo ; work         ;
+;    |mux_4_1:I_Mux_4_1_7_bits|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DataPath|mux_4_1:I_Mux_4_1_7_bits            ; mux_4_1          ; work         ;
+;    |subtrator:B_Subtrator_1|             ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DataPath|subtrator:B_Subtrator_1             ; subtrator        ; work         ;
+;    |subtrator:E_Subtrator_2|             ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DataPath|subtrator:E_Subtrator_2             ; subtrator        ; work         ;
+;    |total_itens_reg:J_Total_Itens_Reg|   ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DataPath|total_itens_reg:J_Total_Itens_Reg   ; total_itens_reg  ; work         ;
+;    |total_reg:D_Total_Reg|               ; 34 (34)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DataPath|total_reg:D_Total_Reg               ; total_reg        ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |smart_cart|Controladora:A_Controladora|estado_atual                                                                                                                                                                                                                   ;
-+-------------------------------+----------------------+-----------------------------+--------------------+-----------------------+---------------------+--------------------+-----------------------+-----------------------------+-------------------------------+---------------------+
-; Name                          ; estado_atual.sucesso ; estado_atual.verifica_saldo ; estado_atual.pagar ; estado_atual.confirma ; estado_atual.remove ; estado_atual.error ; estado_atual.adiciona ; estado_atual.confere_adicao ; estado_atual.edicao_da_compra ; estado_atual.inicio ;
-+-------------------------------+----------------------+-----------------------------+--------------------+-----------------------+---------------------+--------------------+-----------------------+-----------------------------+-------------------------------+---------------------+
-; estado_atual.inicio           ; 0                    ; 0                           ; 0                  ; 0                     ; 0                   ; 0                  ; 0                     ; 0                           ; 0                             ; 0                   ;
-; estado_atual.edicao_da_compra ; 0                    ; 0                           ; 0                  ; 0                     ; 0                   ; 0                  ; 0                     ; 0                           ; 1                             ; 1                   ;
-; estado_atual.confere_adicao   ; 0                    ; 0                           ; 0                  ; 0                     ; 0                   ; 0                  ; 0                     ; 1                           ; 0                             ; 1                   ;
-; estado_atual.adiciona         ; 0                    ; 0                           ; 0                  ; 0                     ; 0                   ; 0                  ; 1                     ; 0                           ; 0                             ; 1                   ;
-; estado_atual.error            ; 0                    ; 0                           ; 0                  ; 0                     ; 0                   ; 1                  ; 0                     ; 0                           ; 0                             ; 1                   ;
-; estado_atual.remove           ; 0                    ; 0                           ; 0                  ; 0                     ; 1                   ; 0                  ; 0                     ; 0                           ; 0                             ; 1                   ;
-; estado_atual.confirma         ; 0                    ; 0                           ; 0                  ; 1                     ; 0                   ; 0                  ; 0                     ; 0                           ; 0                             ; 1                   ;
-; estado_atual.pagar            ; 0                    ; 0                           ; 1                  ; 0                     ; 0                   ; 0                  ; 0                     ; 0                           ; 0                             ; 1                   ;
-; estado_atual.verifica_saldo   ; 0                    ; 1                           ; 0                  ; 0                     ; 0                   ; 0                  ; 0                     ; 0                           ; 0                             ; 1                   ;
-; estado_atual.sucesso          ; 1                    ; 0                           ; 0                  ; 0                     ; 0                   ; 0                  ; 0                     ; 0                           ; 0                             ; 1                   ;
-+-------------------------------+----------------------+-----------------------------+--------------------+-----------------------+---------------------+--------------------+-----------------------+-----------------------------+-------------------------------+---------------------+
 
 
 +------------------------------------------------------+
@@ -263,84 +241,84 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 56    ;
+; Total registers                              ; 39    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 49    ;
+; Number of registers using Asynchronous Clear ; 39    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 46    ;
+; Number of registers using Clock Enable       ; 39    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DataPath:B_DataPath|mux_4_1:C_Mux_4_1_32_bits ;
-+----------------+-------+-------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                              ;
-+----------------+-------+-------------------------------------------------------------------+
-; w              ; 32    ; Signed Integer                                                    ;
-+----------------+-------+-------------------------------------------------------------------+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_4_1:C_Mux_4_1_32_bits ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; w              ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DataPath:B_DataPath|comparador_saldo:F_Comparador_Saldo ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                        ;
-+----------------+-------+-----------------------------------------------------------------------------+
-; W              ; 32    ; Signed Integer                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparador_saldo:F_Comparador_Saldo ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; W              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DataPath:B_DataPath|incrementador:G_Incrementador ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; W              ; 7     ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: incrementador:G_Incrementador ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; W              ; 7     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DataPath:B_DataPath|decrementador:H_Decrementador ;
-+----------------+-------+-----------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                  ;
-+----------------+-------+-----------------------------------------------------------------------+
-; W              ; 7     ; Signed Integer                                                        ;
-+----------------+-------+-----------------------------------------------------------------------+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decrementador:H_Decrementador ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; W              ; 7     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DataPath:B_DataPath|mux_4_1:I_Mux_4_1_7_bits ;
-+----------------+-------+------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                             ;
-+----------------+-------+------------------------------------------------------------------+
-; w              ; 7     ; Signed Integer                                                   ;
-+----------------+-------+------------------------------------------------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mux_4_1:I_Mux_4_1_7_bits ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; w              ; 7     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DataPath:B_DataPath|total_itens_reg:J_Total_Itens_Reg ;
-+----------------+-------+---------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                      ;
-+----------------+-------+---------------------------------------------------------------------------+
-; W              ; 7     ; Signed Integer                                                            ;
-+----------------+-------+---------------------------------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: total_itens_reg:J_Total_Itens_Reg ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; W              ; 7     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DataPath:B_DataPath|comparador_itens:K_Comparador_Itens ;
-+----------------+---------+---------------------------------------------------------------------------+
-; Parameter Name ; Value   ; Type                                                                      ;
-+----------------+---------+---------------------------------------------------------------------------+
-; W              ; 7       ; Signed Integer                                                            ;
-; max_itens      ; 0100000 ; Unsigned Binary                                                           ;
-+----------------+---------+---------------------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparador_itens:K_Comparador_Itens ;
++----------------+---------+-------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                  ;
++----------------+---------+-------------------------------------------------------+
+; W              ; 7       ; Signed Integer                                        ;
+; max_itens      ; 0100000 ; Unsigned Binary                                       ;
++----------------+---------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -349,22 +327,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 148                         ;
-; cycloneiii_ff         ; 56                          ;
-;     CLR               ; 10                          ;
-;     ENA               ; 7                           ;
+; boundary_port         ; 144                         ;
+; cycloneiii_ff         ; 39                          ;
 ;     ENA CLR           ; 39                          ;
-; cycloneiii_lcell_comb ; 158                         ;
+; cycloneiii_lcell_comb ; 141                         ;
 ;     arith             ; 100                         ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 98                          ;
-;     normal            ; 58                          ;
-;         2 data inputs ; 39                          ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 12                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 99                          ;
+;     normal            ; 41                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 34                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.10                        ;
-; Average LUT depth     ; 3.50                        ;
+; Average LUT depth     ; 3.34                        ;
 +-----------------------+-----------------------------+
 
 
@@ -373,7 +349,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -383,7 +359,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Fri Jul 15 00:31:10 2022
+    Info: Processing started: Fri Jul 15 16:04:24 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off smart_cart -c smart_cart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -453,30 +429,31 @@ Info (12021): Found 2 design units, including 1 entities, in source file smart_c
 Info (12021): Found 2 design units, including 1 entities, in source file tb_smart_cart.vhd
     Info (12022): Found design unit 1: tb_smart_cart-teste File: C:/projeto/tb_smart_cart.vhd Line: 9
     Info (12023): Found entity 1: tb_smart_cart File: C:/projeto/tb_smart_cart.vhd Line: 6
-Info (12127): Elaborating entity "smart_cart" for the top level hierarchy
-Info (12128): Elaborating entity "Controladora" for hierarchy "Controladora:A_Controladora" File: C:/projeto/smart_cart.vhd Line: 111
-Info (12128): Elaborating entity "DataPath" for hierarchy "DataPath:B_DataPath" File: C:/projeto/smart_cart.vhd Line: 136
-Info (12128): Elaborating entity "somador" for hierarchy "DataPath:B_DataPath|somador:A_Somador" File: C:/projeto/DataPath.vhd Line: 111
-Info (12128): Elaborating entity "subtrator" for hierarchy "DataPath:B_DataPath|subtrator:B_Subtrator_1" File: C:/projeto/DataPath.vhd Line: 114
-Info (12128): Elaborating entity "mux_4_1" for hierarchy "DataPath:B_DataPath|mux_4_1:C_Mux_4_1_32_bits" File: C:/projeto/DataPath.vhd Line: 117
-Info (12128): Elaborating entity "total_reg" for hierarchy "DataPath:B_DataPath|total_reg:D_Total_Reg" File: C:/projeto/DataPath.vhd Line: 121
-Info (12128): Elaborating entity "comparador_saldo" for hierarchy "DataPath:B_DataPath|comparador_saldo:F_Comparador_Saldo" File: C:/projeto/DataPath.vhd Line: 128
-Info (12128): Elaborating entity "incrementador" for hierarchy "DataPath:B_DataPath|incrementador:G_Incrementador" File: C:/projeto/DataPath.vhd Line: 131
-Info (12128): Elaborating entity "decrementador" for hierarchy "DataPath:B_DataPath|decrementador:H_Decrementador" File: C:/projeto/DataPath.vhd Line: 134
-Info (12128): Elaborating entity "mux_4_1" for hierarchy "DataPath:B_DataPath|mux_4_1:I_Mux_4_1_7_bits" File: C:/projeto/DataPath.vhd Line: 137
-Info (12128): Elaborating entity "total_itens_reg" for hierarchy "DataPath:B_DataPath|total_itens_reg:J_Total_Itens_Reg" File: C:/projeto/DataPath.vhd Line: 141
-Info (12128): Elaborating entity "comparador_itens" for hierarchy "DataPath:B_DataPath|comparador_itens:K_Comparador_Itens" File: C:/projeto/DataPath.vhd Line: 147
+Info (12021): Found 2 design units, including 1 entities, in source file tb_datapath.vhd
+    Info (12022): Found design unit 1: tb_DataPath-teste File: C:/projeto/tb_DataPath.vhd Line: 9
+    Info (12023): Found entity 1: tb_DataPath File: C:/projeto/tb_DataPath.vhd Line: 6
+Info (12127): Elaborating entity "DataPath" for the top level hierarchy
+Info (12128): Elaborating entity "somador" for hierarchy "somador:A_Somador" File: C:/projeto/DataPath.vhd Line: 111
+Info (12128): Elaborating entity "subtrator" for hierarchy "subtrator:B_Subtrator_1" File: C:/projeto/DataPath.vhd Line: 114
+Info (12128): Elaborating entity "mux_4_1" for hierarchy "mux_4_1:C_Mux_4_1_32_bits" File: C:/projeto/DataPath.vhd Line: 117
+Info (12128): Elaborating entity "total_reg" for hierarchy "total_reg:D_Total_Reg" File: C:/projeto/DataPath.vhd Line: 121
+Info (12128): Elaborating entity "comparador_saldo" for hierarchy "comparador_saldo:F_Comparador_Saldo" File: C:/projeto/DataPath.vhd Line: 128
+Info (12128): Elaborating entity "incrementador" for hierarchy "incrementador:G_Incrementador" File: C:/projeto/DataPath.vhd Line: 131
+Info (12128): Elaborating entity "decrementador" for hierarchy "decrementador:H_Decrementador" File: C:/projeto/DataPath.vhd Line: 134
+Info (12128): Elaborating entity "mux_4_1" for hierarchy "mux_4_1:I_Mux_4_1_7_bits" File: C:/projeto/DataPath.vhd Line: 137
+Info (12128): Elaborating entity "total_itens_reg" for hierarchy "total_itens_reg:J_Total_Itens_Reg" File: C:/projeto/DataPath.vhd Line: 141
+Info (12128): Elaborating entity "comparador_itens" for hierarchy "comparador_itens:K_Comparador_Itens" File: C:/projeto/DataPath.vhd Line: 147
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 313 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 73 input pins
-    Info (21059): Implemented 75 output pins
-    Info (21061): Implemented 165 logic cells
+Info (21057): Implemented 284 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 71 input pins
+    Info (21059): Implemented 73 output pins
+    Info (21061): Implemented 140 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4791 megabytes
-    Info: Processing ended: Fri Jul 15 00:31:29 2022
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 4795 megabytes
+    Info: Processing ended: Fri Jul 15 16:04:35 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:27
 
 

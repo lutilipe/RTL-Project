@@ -4,8 +4,8 @@ USE ieee.std_logic_1164.all;
 entity DataPath is
    port (
 		-- ENTRADAS --
-		valor_produto : in std_logic_vector(31 downto 0);
-		saldo_cartao : in std_logic_vector(31 downto 0);
+		valor_produto : in std_logic_vector(31 downto 0) := (others => '0');
+		saldo_cartao : in std_logic_vector(31 downto 0) := (others => '0');
 		
 		ld_total : in std_logic;
 		clr_total : in std_logic;
@@ -101,8 +101,8 @@ component comparador_saldo is
 
 end component comparador_saldo;
 
-signal aux_D_ABEF, aux_A_C, aux_B_C, aux_C_D, aux_D_E : std_logic_vector(31 downto 0);
-signal aux_J_GHI, aux_G_I, aux_H_I, aux_I_J : std_logic_vector(6 downto 0);
+signal aux_D_ABEF, aux_A_C, aux_B_C, aux_C_D, aux_D_E : std_logic_vector(31 downto 0) := (others => '0');
+signal aux_J_GHI, aux_G_I, aux_H_I, aux_I_J : std_logic_vector(6 downto 0) := (others => '0');
 
 begin
 

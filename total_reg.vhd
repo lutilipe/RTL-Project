@@ -6,7 +6,7 @@ entity total_reg is
     port (
         total_in : in std_logic_vector(31 downto 0);
         ld, clock, clear : in std_logic;
-        valor_compra : out std_logic_vector(31 downto 0)
+        valor_compra : out std_logic_vector(31 downto 0) := (others => '0')
     );
 end total_reg;
 
