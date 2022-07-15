@@ -1,5 +1,5 @@
 Flow report for smart_cart
-Thu Jul 14 21:29:04 2022
+Fri Jul 15 00:31:59 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,13 +41,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Jul 14 21:29:04 2022       ;
+; Flow Status                        ; Successful - Fri Jul 15 00:31:59 2022       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; smart_cart                                  ;
 ; Top-level Entity Name              ; smart_cart                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 162 / 6,272 ( 3 % )                         ;
-;     Total combinational functions  ; 160 / 6,272 ( 3 % )                         ;
+; Total logic elements               ; 158 / 6,272 ( 3 % )                         ;
+;     Total combinational functions  ; 158 / 6,272 ( 3 % )                         ;
 ;     Dedicated logic registers      ; 56 / 6,272 ( < 1 % )                        ;
 ; Total registers                    ; 56                                          ;
 ; Total pins                         ; 148 / 180 ( 82 % )                          ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/14/2022 21:28:21 ;
+; Start date & time ; 07/15/2022 00:31:12 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; smart_cart          ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+---------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id          ;
 +--------------------------------------+----------------------------------------+---------------+-------------+---------------------+
-; COMPILER_SIGNATURE_ID                ; 167381581466604.165784490109848        ; --            ; --          ; --                  ;
+; COMPILER_SIGNATURE_ID                ; 167381581466605.165785587211788        ; --            ; --          ; --                  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_comparador_itens ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_decrementador    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_somador          ;
@@ -87,7 +87,7 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_total_reg        ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_incrementador    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tb_mux_4_1          ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_total_reg                           ; --            ; --          ; eda_simulation      ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_smart_cart                          ; --            ; --          ; eda_simulation      ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --          ; eda_simulation      ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --                  ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation      ;
@@ -143,12 +143,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4794 MB             ; 00:00:37                           ;
-; Fitter               ; 00:00:17     ; 1.0                     ; 5502 MB             ; 00:00:20                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4681 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4773 MB             ; 00:00:03                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4791 MB             ; 00:00:30                           ;
+; Fitter               ; 00:00:14     ; 1.0                     ; 5504 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4680 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4772 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4640 MB             ; 00:00:01                           ;
-; Total                ; 00:00:38     ; --                      ; --                  ; 00:01:02                           ;
+; Total                ; 00:00:36     ; --                      ; --                  ; 00:00:45                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -440,14 +440,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "del",
-					"strict" : false
-				},
-				{
-					"name" : "add",
-					"strict" : false
-				},
-				{
 					"name" : "valor_produto[1]",
 					"strict" : false
 				},
@@ -581,6 +573,14 @@
 				},
 				{
 					"name" : "cartao_lido",
+					"strict" : false
+				},
+				{
+					"name" : "add",
+					"strict" : false
+				},
+				{
+					"name" : "del",
 					"strict" : false
 				},
 				{

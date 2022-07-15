@@ -12,7 +12,7 @@ entity DataPath is
 		ld_total_itens : in std_logic;
 		clr_total_itens : in std_logic;
 		
-		add, del : in std_logic;
+		add_sel, del_sel : in std_logic;
 		
 		clock : in std_logic;
 		
@@ -116,7 +116,7 @@ B_Subtrator_1 : subtrator
 
 C_Mux_4_1_32_bits : mux_4_1 
 	generic map(W=>32)
-	port map(in0=>aux_D_ABEF,in1=>aux_A_C,in2=>aux_B_C,in3=>aux_D_ABEF,out1=>aux_C_D, s0 => add, s1 => del);
+	port map(in0=>aux_D_ABEF,in1=>aux_A_C,in2=>aux_B_C,in3=>aux_D_ABEF,out1=>aux_C_D, s0 => add_sel, s1 => del_sel);
 
 D_Total_Reg : total_reg
 	port map(total_in=>aux_C_D,clock=>clock,clear=>clr_total,ld=>ld_total,valor_compra=>aux_D_ABEF);
@@ -136,7 +136,7 @@ H_Decrementador : decrementador
 	
 I_Mux_4_1_7_bits : mux_4_1 
 	generic map(W=>7)
-	port map(in0=>aux_J_GHI,in1=>aux_G_I,in2=>aux_H_I,in3=>aux_J_GHI,out1=>aux_I_J, s0 => add, s1 => del);
+	port map(in0=>aux_J_GHI,in1=>aux_G_I,in2=>aux_H_I,in3=>aux_J_GHI,out1=>aux_I_J, s0 => add_sel, s1 => del_sel);
 
 J_Total_Itens_Reg : total_itens_reg
 	port map(

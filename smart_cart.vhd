@@ -45,7 +45,7 @@ component DataPath is
 		ld_total_itens : in std_logic;
 		clr_total_itens : in std_logic;
 		
-		add, del : in std_logic;
+		add_sel, del_sel : in std_logic;
 		
 		clock : in std_logic;
 		
@@ -85,6 +85,8 @@ component Controladora is
 		ld_total_itens : out std_logic;
 		clr_total_itens : out std_logic;
 		
+		add_sel, del_sel : out std_logic;
+		
 		erro : out std_logic;
 		concluido : out std_logic;
 		desconta : out std_logic;
@@ -101,6 +103,8 @@ signal aux_ld_total : std_logic;
 signal aux_clr_total : std_logic;
 signal aux_ld_total_itens : std_logic;
 signal aux_clr_total_itens : std_logic;
+signal aux_add_sel : std_logic;
+signal aux_del_sel : std_logic;
 
 begin
 										  
@@ -124,7 +128,9 @@ begin
 			erro => erro,
 			concluido => concluido,
 			desconta => desconta,
-			ler_pagamento => ler_pagamento
+			ler_pagamento => ler_pagamento,
+			add_sel => aux_add_sel,
+			del_sel => aux_del_sel
 		);
 		
 	B_DataPath : DataPath  
@@ -132,8 +138,6 @@ begin
 			valor_produto => valor_produto,
 			saldo_cartao => saldo_cartao,
 			clock => clock,
-			add => add,
-			del => del,
 			ld_total => aux_ld_total,
 			clr_total => aux_clr_total,
 			ld_total_itens => aux_ld_total_itens,
@@ -142,7 +146,9 @@ begin
 			valor_compra => valor_compra,
 			quantidade_itens => quantidade_itens,
 			total_itens_lt_32 => aux_total_itens_lt_32,
-			saldo_lt_total => aux_saldo_lt_total
+			saldo_lt_total => aux_saldo_lt_total,
+			add_sel => aux_add_sel,
+			del_sel => aux_del_sel
 		);
 
 end RTLsmart_cart ;

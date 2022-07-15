@@ -27,6 +27,9 @@ entity Controladora is
 		ld_total_itens : out std_logic;
 		clr_total_itens : out std_logic;
 		
+		add_sel : out std_logic;
+		del_sel : out std_logic;
+		
 		erro : out std_logic;
 		concluido : out std_logic;
 		desconta : out std_logic;
@@ -113,6 +116,8 @@ begin
 	clr_total <= '0';
 	ld_total_itens <= '0';
 	clr_total_itens <= '0';
+	add_sel <= '0';
+	del_sel <= '0';
 	
 	erro <= '0';
 	concluido <= '0';
@@ -159,6 +164,7 @@ begin
 			end if;
 		
 		when adiciona =>
+			add_sel <= '1';
 			ld_total_itens <= '1';
 			ld_total <= '1';
 			proximo_estado <= edicao_da_compra;
@@ -170,6 +176,7 @@ begin
 		when remove =>
 			ld_total_itens <= '1';
 			ld_total <= '1';
+			del_sel <= '1';
 			proximo_estado <= edicao_da_compra;
 		
 		when confirma =>
